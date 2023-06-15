@@ -144,11 +144,6 @@ h3 a:active {
     z-index: 2;
 }
 
-div a img {
-    height: 50%;
-    width: 50%;
-}
-
 .section-flex-container {
     display: flex;
     flex-flow: column nowrap;
@@ -159,4 +154,16 @@ div a img {
     display: flex;
     flex-flow: row-reverse wrap;
     justify-content: center;
+}
+
+.section-content {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: right;
+    column-gap: 5px;
+}
+
+.section-content:last-child {
+    align-items: flex-end;
 }
