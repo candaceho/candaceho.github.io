@@ -135,3 +135,28 @@ h3 a:hover {
 h3 a:active {
     color: tomato;
 }
+
+.socials-flex-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: left;
+    align-items: flex-start;
+    z-index: 2;
+}
+
+div a img {
+    height: 50%;
+    width: 50%;
+}
+
+.section-flex-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.section-flex-item {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: center;
+}
