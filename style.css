@@ -11,10 +11,11 @@
     box-sizing: border-box;
 }
 /*
-  2. Remove default margin
+  2. Remove default margin and text decoration
 */
 * {
     margin: 0;
+    text-decoration: none;
 }
 /*
   Typographic tweaks!
@@ -377,43 +378,10 @@ p, h1, h2, h3, h4, h5, h6 {
  *
  */
 @media screen and (min-width: 776px) {
-    a {
-        text-decoration: none;
-    }
-
-    header {
-        margin-bottom: 20px;
-    }
-
-    .header-flex-container {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 1;
-    }
-
-    .header-flex-item {
-
-    }
-
-    .header-flex-item:first-child {
-        margin-left: 20px;
-    }
-
-    .header-flex-item:last-child {
-        margin-right: 20px;
-    }
-
-    #title {
-        position: relative;
-        top: 15px;
-        z-index: 1;
-    }
-
+    /* SET FONT SIZES */
     h1 {
         font-family: sans-serif;
-        font-size: 42px;
+        font-size: 28px;
     }
 
     h1 a {
@@ -431,7 +399,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
     h2 {
         font-family: sans-serif;
-        font-size: 24px;
+        font-size: 20px;
     }
 
     h2 a {
@@ -449,7 +417,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
     h3 {
         font-family: sans-serif;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     h3 a {
@@ -467,7 +435,73 @@ p, h1, h2, h3, h4, h5, h6 {
 
     h4 {
         font-family: sans-serif;
-        font-size: 14px;
+        font-size: 12px;
+    }
+
+    h4 a {
+        transition-duration: 0.4s;
+        color: black;
+    }
+
+    h4 a:hover {
+        color: tomato;
+    }
+
+    h4 a:active {
+        color: tomato;
+    }
+
+    /* BODY STYLING */
+    .body-flex-container {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .body-flex-item {
+
+    }
+
+    .body-flex-item:first-child {
+        width: 300px;
+    }
+
+    .body-flex-item:last-child {
+        flex: 1 0 0;
+    }
+
+    /* HEADER STYLING */
+    header {
+        position: fixed;
+        padding-top: 20px;
+        padding-left: 50px;
+        padding-bottom: 40px;
+        height: 100%;
+    }
+
+    .header-flex-container {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .header-flex-item {
+    }
+
+    .sub-header-flex-container {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-end;
+    }
+
+    .sub-header-flex-item {
+    }
+
+    #title {
+        position: relative;
+        top: 12px;
     }
 
     .nav-flex-container {
@@ -479,39 +513,46 @@ p, h1, h2, h3, h4, h5, h6 {
     }
 
     .nav-flex-item {
-        margin-left: 4px;
+        margin-left: 8px;
         z-index: 2;
     }
 
-    h3 {
-        font-family: sans-serif;
-        font-size: 18px;
+    .header-flex-item:last-child {
+
+    }
+
+    #email {
+        position: relative;
+        bottom: 3px;
     }
 
     .socials-flex-container {
         display: flex;
         flex-flow: row nowrap;
-        justify-content: left;
+        justify-content: right;
         align-items: flex-start;
-        z-index: 2;
     }
 
-    .socials-flex-container a img {
-        height: 50%;
-        width: auto;
+    .socials-flex-item {
+        margin-left: 8px;
     }
 
+    .socials-icon {
+    }
+
+    .socials-icon img {
+    }
+
+    /* SECTION STYLING */
     .section-flex-container {
         display: flex;
         flex-flow: column nowrap;
-        justify-content: center;
         row-gap: 25px;
     }
 
     .section-flex-item {
         display: flex;
-        flex-flow: row-reverse wrap;
-        justify-content: center;
+        flex-flow: row-reverse nowrap;
         column-gap: 25px;
     }
 
@@ -519,7 +560,9 @@ p, h1, h2, h3, h4, h5, h6 {
         display: flex;
         flex-flow: column wrap;
         align-items: flex-end;
-        justify-content: right;
+
+        padding-top: 20px;
+        padding-bottom: 20px;
 
         min-width: 250px;
         max-width: 250px;
