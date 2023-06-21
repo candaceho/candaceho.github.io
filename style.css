@@ -54,51 +54,18 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /*
  *
- * SMALL SCREENS
+ * EXTRA SMALL SCREENS
  *
  */
-@media screen and (max-width: 800px) {
-    a {
-        text-decoration: none;
-    }
-
-    header {
-        margin-bottom: 20px;
-    }
-
-    .header-flex-container {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 1;
-    }
-
-    .header-flex-item {
-
-    }
-
-    .header-flex-item:first-child {
-        margin-left: 20px;
-    }
-
-    .header-flex-item:last-child {
-        margin-right: 20px;
-    }
-
-    #title {
-        position: relative;
-        top: 15px;
-        z-index: 1;
-    }
-
+@media screen and (max-width: 500px) {
+    /* SET FONT SIZES */
     h1 {
         font-family: sans-serif;
-        font-size: 42px;
+        font-size: 28px;
     }
 
     h1 a {
-        transition-duration: 0.4s;
+        transition-duration: 0.3s;
         color: black;
     }
 
@@ -112,11 +79,11 @@ p, h1, h2, h3, h4, h5, h6 {
 
     h2 {
         font-family: sans-serif;
-        font-size: 24px;
+        font-size: 20px;
     }
 
     h2 a {
-        transition-duration: 0.4s;
+        transition-duration: 0.3s;
         color: black;
     }
 
@@ -130,11 +97,11 @@ p, h1, h2, h3, h4, h5, h6 {
 
     h3 {
         font-family: sans-serif;
-        font-size: 18px;
+        font-size: 16px;
     }
 
     h3 a {
-        transition-duration: 0.4s;
+        transition-duration: 0.3s;
         color: black;
     }
 
@@ -148,7 +115,67 @@ p, h1, h2, h3, h4, h5, h6 {
 
     h4 {
         font-family: sans-serif;
-        font-size: 14px;
+        font-size: 12px;
+    }
+
+    h4 a {
+        transition-duration: 0.3s;
+        color: black;
+    }
+
+    h4 a:hover {
+        color: tomato;
+    }
+
+    h4 a:active {
+        color: tomato;
+    }
+
+    /* BODY STYLING */
+    .body-flex-container {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .body-flex-item {
+
+    }
+
+    /* HEADER STYLING */
+    header {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .header-flex-container {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-flex-item:first-child {
+        padding-left: 25px;
+    }
+
+    .header-flex-item:last-child {
+        visibility: collapse;
+    }
+
+    .sub-header-flex-container {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+
+        row-gap: 3px;
+    }
+
+    .sub-header-flex-item {
+    }
+
+    #title {
+
     }
 
     .nav-flex-container {
@@ -160,49 +187,287 @@ p, h1, h2, h3, h4, h5, h6 {
     }
 
     .nav-flex-item {
-        margin-left: 4px;
+        margin-left: 8px;
         z-index: 2;
     }
 
-    h3 {
-        font-family: sans-serif;
-        font-size: 18px;
-    }
-
-    .socials-flex-container {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: left;
-        align-items: flex-start;
-        z-index: 2;
-    }
-
+    /* SECTION STYLING */
     .section-flex-container {
         display: flex;
         flex-flow: column nowrap;
-        justify-content: center;
-        row-gap: 25px;
     }
 
     .section-flex-item {
         display: flex;
-        flex-flow: row-reverse wrap;
-        justify-content: center;
-        column-gap: 25px;
+        flex-flow: column nowrap;
+        padding-bottom: 18px;
+    }
+
+    .section-flex-item:last-child {
+        padding-bottom: 20px;
+    }
+
+    .section-image {
+        transition-duration: 0.3s;
+    }
+
+    .section-image:hover {
+        opacity: 50%;
     }
 
     .section-content {
         display: flex;
         flex-flow: row wrap;
-        justify-content: flex-start;
+        align-items: flex-start;
+
+        padding-top: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .film-title {
     }
 
     .film-description {
+        position: relative;
+        top: 3px;
         margin-left: auto;
     }
 
+    .break {
+        height: 0;
+        flex-basis: 100%;
+    }
+
     .extra-content {
+        position: relative;
+        bottom: 8px;
+        max-width: 200px;
         margin-left: auto;
+        text-align: right;
+    }
+}
+
+/*
+ *
+ * SMALL SCREENS
+ *
+ */
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    /* SET FONT SIZES */
+    h1 {
+        font-family: sans-serif;
+        font-size: 28px;
+    }
+
+    h1 a {
+        transition-duration: 0.3s;
+        color: black;
+    }
+
+    h1 a:hover {
+        color: tomato;
+    }
+
+    h1 a:active {
+        color: tomato;
+    }
+
+    h2 {
+        font-family: sans-serif;
+        font-size: 20px;
+    }
+
+    h2 a {
+        transition-duration: 0.3s;
+        color: black;
+    }
+
+    h2 a:hover {
+        color: tomato;
+    }
+
+    h2 a:active {
+        color: tomato;
+    }
+
+    h3 {
+        font-family: sans-serif;
+        font-size: 16px;
+    }
+
+    h3 a {
+        transition-duration: 0.3s;
+        color: black;
+    }
+
+    h3 a:hover {
+        color: tomato;
+    }
+
+    h3 a:active {
+        color: tomato;
+    }
+
+    h4 {
+        font-family: sans-serif;
+        font-size: 12px;
+    }
+
+    h4 a {
+        transition-duration: 0.3s;
+        color: black;
+    }
+
+    h4 a:hover {
+        color: tomato;
+    }
+
+    h4 a:active {
+        color: tomato;
+    }
+
+    /* BODY STYLING */
+    .body-flex-container {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+
+    .body-flex-item {
+
+    }
+
+    /* HEADER STYLING */
+    header {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .header-flex-container {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .header-flex-item:first-child {
+        padding-left: 50px;
+    }
+
+    .header-flex-item:last-child {
+        padding-top: 20px;
+        padding-right: 50px;
+    }
+
+    .sub-header-flex-container {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-end;
+
+        row-gap: 3px;
+    }
+
+    #title {
+        position: relative;
+        top: 8px;
+    }
+
+    .nav-flex-container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: right;
+        align-items: flex-start;
+        z-index: 2;
+    }
+
+    .nav-flex-item {
+        margin-left: 8px;
+        z-index: 2;
+    }
+
+    .header-flex-item:last-child {
+
+    }
+
+    #email {
+        position: relative;
+        bottom: 3px;
+    }
+
+    .socials-flex-container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: right;
+        align-items: flex-start;
+    }
+
+    .socials-flex-item {
+        margin-left: 8px;
+    }
+
+    .socials-icon {
+        transition-duration: 0.3s;
+    }
+
+    .socials-icon:hover {
+        opacity: 50%;
+    }
+
+    /* SECTION STYLING */
+    .section-flex-container {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .section-flex-item {
+        display: flex;
+        flex-flow: column nowrap;
+        padding-bottom: 18px;
+    }
+
+    .section-flex-item:last-child {
+        padding-bottom: 20px;
+    }
+
+    .section-image {
+        transition-duration: 0.3s;
+    }
+
+    .section-image:hover {
+        opacity: 50%;
+    }
+
+    .section-content {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+
+        padding-top: 10px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .film-title {
+    }
+
+    .film-description {
+        position: relative;
+        top: 3px;
+        margin-left: auto;
+    }
+
+    .break {
+        height: 0;
+        flex-basis: 100%;
+    }
+
+    .extra-content {
+        position: relative;
+        bottom: 8px;
+        max-width: 200px;
+        margin-left: auto;
+        text-align: right;
     }
 }
 
@@ -211,7 +476,7 @@ p, h1, h2, h3, h4, h5, h6 {
  * MEDIUM SCREENS
  *
  */
-@media screen and (min-width: 801px) and (max-width: 1050px) {
+@media screen and (min-width: 801px) and (max-width: 1100px) {
     /* SET FONT SIZES */
     h1 {
         font-family: sans-serif;
@@ -308,7 +573,8 @@ p, h1, h2, h3, h4, h5, h6 {
     /* HEADER STYLING */
     header {
         position: fixed;
-        padding-top: 20px;
+        width: 240px;
+        padding-top: 25px;
         padding-left: 50px;
         padding-bottom: 40px;
         height: 100%;
@@ -337,7 +603,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
     #title {
         position: relative;
-        top: 12px;
+        top: 8px;
     }
 
     .nav-flex-container {
@@ -388,7 +654,6 @@ p, h1, h2, h3, h4, h5, h6 {
     .section-flex-container {
         display: flex;
         flex-flow: column nowrap;
-        /*row-gap: 25px;*/
     }
 
     .section-flex-item {
@@ -447,7 +712,7 @@ p, h1, h2, h3, h4, h5, h6 {
  * LARGE SCREENS
  *
  */
-@media screen and (min-width: 1051px) {
+@media screen and (min-width: 1101px) {
     /* SET FONT SIZES */
     h1 {
         font-family: sans-serif;
@@ -526,7 +791,6 @@ p, h1, h2, h3, h4, h5, h6 {
         display: flex;
         flex-flow: row nowrap;
         align-items: flex-start;
-        justify-content: center;
     }
 
     .body-flex-item {
@@ -544,7 +808,8 @@ p, h1, h2, h3, h4, h5, h6 {
     /* HEADER STYLING */
     header {
         position: fixed;
-        padding-top: 20px;
+        width: 240px;
+        padding-top: 25px;
         padding-left: 50px;
         padding-bottom: 40px;
         height: 100%;
@@ -564,7 +829,6 @@ p, h1, h2, h3, h4, h5, h6 {
         display: flex;
         flex-flow: column nowrap;
         align-items: flex-end;
-
         row-gap: 3px;
     }
 
@@ -573,7 +837,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
     #title {
         position: relative;
-        top: 12px;
+        top: 8px;
     }
 
     .nav-flex-container {
@@ -646,8 +910,8 @@ p, h1, h2, h3, h4, h5, h6 {
         flex-flow: column wrap;
         align-items: flex-end;
 
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding-top: 38px;
+        padding-bottom: 38px;
 
         min-width: 250px;
         max-width: 250px;
