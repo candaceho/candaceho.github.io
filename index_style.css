@@ -12,42 +12,33 @@
     /* SET FONT SIZES */
     h1 {
         font-family: sans-serif;
-        font-size: 32px;
-    }
-
-    h1 a {
+        font-size: 48px;
     }
 
     h2 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 24px;
     }
 
-    h2 a {
-    }
-
     h3 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 16px;
     }
 
-    h3 a {
-    }
-
     h4 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 13px;
     }
 
-    h4 a {
-    }
-
     h5 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 12px;
     }
 
-    h5 a {
+    /* SET HOVERABLE */
+    .hoverable {
+        transition-duration: 0.4s;
+        transition-property: color, opacity;
     }
 
     .hoverable:hover {
@@ -58,13 +49,13 @@
     header {
         background-color: rgba(227, 114, 97, 0.75);
 
-        padding: 25px;
+        padding: 15px 25px;
     }
 
     .header-flex-container {
         display: flex;
         flex-flow: row nowrap;
-        align-items: flex-end;
+        align-items: center;
         justify-content: space-between;
     }
 
@@ -95,11 +86,14 @@
         color: rgba(16, 20, 141, 0.57);
     }
 
+    .header-flex-item:first-child .sub-header-flex-item:last-child {
+        position: relative;
+        bottom: 10px;
+    }
+
     #title {
         color: #ffd5e9;
-
-        position: relative;
-        top: 10px;
+        font-family: "Dancing Script", sans-serif;
     }
 
     .nav-flex-container {
@@ -121,6 +115,8 @@
 
     /* BODY STYLING */
     .body-flex-container {
+        color: rgba(0, 0, 0, 0.7);
+
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
@@ -153,7 +149,7 @@
         order: 1;
     }
 
-    .section-image:hover {
+    .section-image img:hover {
         opacity: 80%;
     }
 
@@ -163,24 +159,18 @@
         flex-flow: column nowrap;
         align-items: flex-start;
         justify-content: flex-start;
+
+        row-gap: 5px;
     }
 
     .film-title {
+        color: rgba(16, 20, 141, 0.57);
     }
 
     .film-role {
     }
 
-    .film-logline {
-        margin-top: 25px;
-    }
-
     .film-release-year {
-        margin-top: 25px;
-        font-style: italic;
-    }
-
-    .film-festivals {
         font-style: italic;
     }
 
@@ -203,30 +193,35 @@
     /* SET FONT SIZES */
     h1 {
         font-family: sans-serif;
-        font-size: 32px;
+        font-size: 48px;
     }
 
     h2 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 24px;
     }
 
     h3 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 16px;
     }
 
     h4 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 13px;
     }
 
     h5 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 12px;
     }
 
     /* SET HOVERABLE */
+    .hoverable * {
+        transition-duration: 0.4s;
+        transition-property: color, opacity;
+    }
+
     .hoverable:hover {
         color: rgba(16, 20, 141, 0.57);
     }
@@ -235,7 +230,7 @@
     header {
         background-color: rgba(227, 114, 97, 0.75);
 
-        padding: 25px;
+        padding: 15px 25px;
     }
 
     .header-flex-container {
@@ -272,11 +267,14 @@
         color: rgba(16, 20, 141, 0.57);
     }
 
+    .header-flex-item:first-child .sub-header-flex-item:last-child {
+        position: relative;
+        bottom: 10px;
+    }
+
     #title {
         color: #ffd5e9;
-
-        position: relative;
-        top: 10px;
+        font-family: "Dancing Script", sans-serif;
     }
 
     .nav-flex-container {
@@ -295,6 +293,8 @@
 
     /* BODY STYLING */
     .body-flex-container {
+        color: rgba(0, 0, 0, 0.7);
+
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
@@ -327,7 +327,7 @@
         order: 1;
     }
 
-    .section-image:hover {
+    .section-image img:hover {
         opacity: 80%;
     }
 
@@ -337,9 +337,13 @@
         flex-flow: row wrap;
         align-items: flex-start;
         justify-content: flex-start;
+
+        row-gap: 5px;
     }
 
     .film-title {
+        color: rgba(16, 20, 141, 0.57);
+
         order: 1;
         flex: 2 0 100%;
     }
@@ -351,7 +355,7 @@
 
     .film-role {
         order: 4;
-        flex: 1 1 40%;
+        flex: 1 1 100%;
     }
 
     .film-release-year {
@@ -362,17 +366,9 @@
         text-align: right;
     }
 
-    .film-festivals {
-        order: 5;
-        flex: 1 1 40%;
-
-        font-style: italic;
-        text-align: right;
-    }
-
     .extra-content {
         order: 6;
-        flex: 1 1 40%;
+        flex: 1 1 100%;
 
         margin-top: 25px;
     }
@@ -392,71 +388,35 @@
     /* SET FONT SIZES */
     h1 {
         font-family: sans-serif;
-        font-size: 32px;
-    }
-
-    h1 a {
-        transition-duration: 0.3s;
-        color: black;
+        font-size: 48px;
     }
 
     h2 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 24px;
     }
 
-    h2 a {
-        color: black;
-    }
-
     h3 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 16px;
     }
 
-    h3 a {
-        color: black;
-    }
-
     h4 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 13px;
     }
 
-    h4 a {
-        color: black;
-    }
-
     h5 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 12px;
     }
 
-    h5 a {
-        color: black;
-    }
-
-    .header > h1 {
-
-    }
-
-    .header > h2 {
-
-    }
-
-    .header > h3 {
-
-    }
-
-    .header > h4 {
-
-    }
-
-    .header > h5 {
-
-    }
-
     /* SET HOVERABLE */
+    .hoverable {
+        transition-duration: 0.4s;
+        transition-property: padding-right, border-right-width, opacity, color;
+    }
+
     .hoverable:hover {
         color: rgba(16, 20, 141, 0.57);
     }
@@ -490,15 +450,18 @@
     }
 
     .sub-header-flex-item {
+        color: rgba(16, 20, 141, 0.57);
         text-align: right;
     }
 
     #title {
+        font-family: "Dancing Script", sans-serif;
+
         position: relative;
-        top: 10px;
+        top: 5px;
     }
 
-    #title > a {
+    #title a {
         color: #ffd5e9;
     }
 
@@ -529,11 +492,16 @@
 
     .nav-flex-item > a:hover {
         padding-right: 4px;
-        border-right-style: unset;
+        border-right-width: 0;
+    }
+
+    .sub-header-flex-container:last-child {
+        row-gap: 5px;
     }
 
     .sub-header-flex-container:last-child > .sub-header-flex-item {
         color: rgba(16, 20, 141, 0.57);
+        text-align: left;
     }
 
     .sub-header-flex-container:last-child > .sub-header-flex-item > a {
@@ -542,6 +510,8 @@
 
     /* BODY STYLING */
     .body-flex-container {
+        color: rgba(0, 0, 0, 0.7);
+
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
@@ -579,7 +549,7 @@
         order: 1;
     }
 
-    .section-image:hover {
+    .section-image img:hover {
         opacity: 80%;
     }
 
@@ -589,34 +559,30 @@
         flex-flow: row wrap;
         align-items: flex-start;
         justify-content: flex-start;
+
+        row-gap: 5px;
     }
 
     .film-title {
+        color: rgba(16, 20, 141, 0.57);
+
         order: 1;
         flex: 2 0 100%;
     }
 
     .film-description {
         order: 2;
-        flex: 1 1 40%;
+        flex: 1 0 250px;
     }
 
     .film-role {
         order: 4;
-        flex: 1 1 40%;
+        flex: 1 1 100%;
     }
 
     .film-release-year {
         order: 3;
-        flex: 1 1 40%;
-
-        font-style: italic;
-        text-align: right;
-    }
-
-    .film-festivals {
-        order: 5;
-        flex: 1 1 40%;
+        flex: 1 2 100px;
 
         font-style: italic;
         text-align: right;
@@ -624,7 +590,7 @@
 
     .extra-content {
         order: 6;
-        flex: 1 1 40%;
+        flex: 1 1 100%;
 
         margin-top: 25px;
     }
@@ -644,70 +610,35 @@
     /* SET FONT SIZES */
     h1 {
         font-family: sans-serif;
-        font-size: 32px;
-    }
-
-    h1 a {
-        color: black;
+        font-size: 48px;
     }
 
     h2 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 24px;
     }
 
-    h2 a {
-        color: black;
-    }
-
     h3 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 16px;
     }
 
-    h3 a {
-        color: black;
-    }
-
     h4 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 13px;
     }
 
-    h4 a {
-        color: black;
-    }
-
     h5 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 12px;
     }
 
-    h5 a {
-        color: black;
-    }
-
-    .header > h1 {
-
-    }
-
-    .header > h2 {
-
-    }
-
-    .header > h3 {
-
-    }
-
-    .header > h4 {
-
-    }
-
-    .header > h5 {
-
-    }
-
     /* SET HOVERABLE */
+    .hoverable {
+        transition-duration: 0.4s;
+        transition-property: padding-right, border-right-width, opacity, color;
+    }
+
     .hoverable:hover {
         color: rgba(16, 20, 141, 0.57);
     }
@@ -741,15 +672,18 @@
     }
 
     .sub-header-flex-item {
+        color: rgba(16, 20, 141, 0.57);
         text-align: right;
     }
 
     #title {
+        font-family: "Dancing Script", sans-serif;
+
         position: relative;
-        top: 10px;
+        top: 5px;
     }
 
-    #title > a {
+    #title a {
         color: #ffd5e9;
     }
 
@@ -780,10 +714,15 @@
 
     .nav-flex-item > a:hover {
         padding-right: 4px;
-        border-right-style: unset;
+        border-right-width: 0;
+    }
+
+    .sub-header-flex-container:last-child {
+        row-gap: 5px;
     }
 
     .sub-header-flex-container:last-child > .sub-header-flex-item {
+        text-align: left;
         color: rgba(16, 20, 141, 0.57);
     }
 
@@ -793,6 +732,8 @@
 
     /* BODY STYLING */
     .body-flex-container {
+        color: rgba(0, 0, 0, 0.7);
+
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
@@ -815,8 +756,6 @@
 
     /* SECTION STYLING */
     .section-flex-container {
-        /*background-color: aquamarine;*/
-
         display: flex;
         flex-flow: column nowrap;
         row-gap: 25px;
@@ -872,50 +811,40 @@
         flex-flow: row nowrap;
         column-gap: 20px;
 
-        align-items: flex-start;
+        align-items: stretch;
         justify-content: center;
     }
 
     .section-image {
-        /*border: 6px solid;*/
-        flex-shrink: 1;
-        flex-grow: 0;
-        max-width: 600px;
+        flex: 0 1 600px;
     }
 
-    .section-image > a > img {
+    .section-image img {
         object-fit: contain;
     }
 
-    .section-image:hover > a > img {
+    .section-image img:hover {
         opacity: 80%;
     }
 
     .section-content-main {
-        flex-shrink: 0;
-        flex-grow: 1;
+        flex: 1 0 auto;
+
+        row-gap: 5px;
     }
 
     .film-title {
+        color: rgba(16, 20, 141, 0.57);
     }
 
     .film-role {
     }
 
-    .film-logline {
-        margin-top: 25px;
-    }
-
     .film-release-year {
-        margin-top: 25px;
-        font-style: italic;
-    }
-
-    .film-festivals {
         font-style: italic;
     }
 
     .extra-content {
-        margin-top: 25px;
+        margin-top: auto;
     }
 }

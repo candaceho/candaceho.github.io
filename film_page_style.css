@@ -1,9 +1,9 @@
 /*
  *
- * EXTRA SMALL SCREENS
+ * EXTRA EXTRA SMALL SCREENS
  *
  */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 450px) {
     /* SET BACKGROUND COLOR */
     body {
         background-color: whitesmoke;
@@ -12,42 +12,33 @@
     /* SET FONT SIZES */
     h1 {
         font-family: sans-serif;
-        font-size: 32px;
-    }
-
-    h1 a {
+        font-size: 48px;
     }
 
     h2 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 24px;
     }
 
-    h2 a {
-    }
-
     h3 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 16px;
     }
 
-    h3 a {
-    }
-
     h4 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 13px;
     }
 
-    h4 a {
-    }
-
     h5 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 12px;
     }
 
-    h5 a {
+    /* SET HOVERABLE */
+    .hoverable {
+        transition-duration: 0.4s;
+        transition-property: color, opacity;
     }
 
     .hoverable:hover {
@@ -58,13 +49,13 @@
     header {
         background-color: rgba(227, 114, 97, 0.75);
 
-        padding: 25px;
+        padding: 15px 25px;
     }
 
     .header-flex-container {
         display: flex;
         flex-flow: row nowrap;
-        align-items: flex-end;
+        align-items: center;
         justify-content: space-between;
     }
 
@@ -95,11 +86,14 @@
         color: rgba(16, 20, 141, 0.57);
     }
 
+    .header-flex-item:first-child .sub-header-flex-item:last-child {
+        position: relative;
+        bottom: 10px;
+    }
+
     #title {
         color: #ffd5e9;
-
-        position: relative;
-        top: 10px;
+        font-family: "Dancing Script", sans-serif;
     }
 
     .nav-flex-container {
@@ -121,6 +115,8 @@
 
     /* BODY STYLING */
     .body-flex-container {
+        color: rgba(0, 0, 0, 0.7);
+
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
@@ -149,17 +145,15 @@
     }
 
     #film-title {
+        color: rgba(16, 20, 141, 0.57);
     }
 
-    #film-role {
-        flex: 0 0 123px;
-
-        margin-right: 20px;
+    #film-role-and-release {
+        flex: 1 1 100%;
     }
 
     #film-description {
-        flex: 1 1;
-        text-align: right;
+        flex: 1 1 100%;
     }
 
     #film-logline {
@@ -170,43 +164,32 @@
         margin-top: 10px;
     }
 
-    #film-release {
-        margin-top: 10px;
-    }
-
     .media-container {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: center;
-
         margin-top: 20px;
         margin-bottom: 20px;
-    }
-
-    .media-item {
-
     }
 
     #film-festivals {
         display: flex;
         flex-flow: column wrap;
+        justify-content: flex-start;
 
         row-gap: 10px;
 
-        text-align: center;
+        text-align: left;
     }
 
     .festivals-container {
         display: flex;
         flex-flow: row wrap;
-        justify-content: flex-start;
+        align-items: flex-start;
+        justify-content: space-around;
 
         row-gap: 10px;
     }
 
     .festival {
-        flex: 1 1;
+        flex: 0 1;
 
         margin-left: 20px;
         margin-right: 20px;
@@ -221,7 +204,10 @@
     }
 
     #film-screener-request a h4 {
-        border: 2px solid black;
+        color: rgba(16, 20, 141, 0.57);;
+
+        background-color: whitesmoke;
+        border: 2px solid rgba(16, 20, 141, 0.57);
         border-radius: 6px;
 
         padding: 10px;
@@ -232,9 +218,8 @@
     }
 
     #film-screener-request a h4:hover {
-        border-color: #ffd5e9;
-        background-color: palevioletred;
-        color: #ffd5e9;
+        background-color: rgba(16, 20, 141, 0.57);
+        color: whitesmoke;
 
         padding: 10px;
 
@@ -244,10 +229,10 @@
 
 /*
  *
- * SMALL SCREENS
+ * EXTRA SMALL SCREENS
  *
  */
-@media screen and (min-width: 501px) and (max-width: 800px) {
+@media screen and (min-width: 451px) and (max-width: 500px) {
     /* SET BACKGROUND COLOR */
     body {
         background-color: whitesmoke;
@@ -256,30 +241,35 @@
     /* SET FONT SIZES */
     h1 {
         font-family: sans-serif;
-        font-size: 32px;
+        font-size: 48px;
     }
 
     h2 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 24px;
     }
 
     h3 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 16px;
     }
 
     h4 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 13px;
     }
 
     h5 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 12px;
     }
 
     /* SET HOVERABLE */
+    .hoverable {
+        transition-duration: 0.4s;
+        transition-property: color, opacity;
+    }
+
     .hoverable:hover {
         color: rgba(16, 20, 141, 0.57);
     }
@@ -288,7 +278,7 @@
     header {
         background-color: rgba(227, 114, 97, 0.75);
 
-        padding: 25px;
+        padding: 15px 25px;
     }
 
     .header-flex-container {
@@ -325,29 +315,37 @@
         color: rgba(16, 20, 141, 0.57);
     }
 
+    .header-flex-item:first-child .sub-header-flex-item:last-child {
+        position: relative;
+        bottom: 10px;
+    }
+
     #title {
         color: #ffd5e9;
-
-        position: relative;
-        top: 10px;
+        font-family: "Dancing Script", sans-serif;
     }
 
     .nav-flex-container {
         display: flex;
-        flex-flow: row nowrap;
-        justify-content: right;
-        align-items: flex-start;
+        flex-flow: column nowrap;
+        justify-content: flex-end;
+        align-items: flex-end;
     }
 
     .nav-flex-item {
         color: #ffd5e9;
-        font-size: 20px;
 
-        margin-left: 15px;
+        font-size: 20px;
+    }
+
+    .nav-flex-item:last-child {
+        margin-top: 0;
     }
 
     /* BODY STYLING */
     .body-flex-container {
+        color: rgba(0, 0, 0, 0.7);
+
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
@@ -376,10 +374,11 @@
     }
 
     #film-title {
+        color: rgba(16, 20, 141, 0.57);
     }
 
-    #film-role {
-        flex: 0 0 123px;
+    #film-role-and-release {
+        flex: 1 1;
 
         margin-right: 20px;
     }
@@ -397,43 +396,32 @@
         margin-top: 10px;
     }
 
-    #film-release {
-        margin-top: 10px;
-    }
-
     .media-container {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: center;
-
         margin-top: 20px;
         margin-bottom: 20px;
-    }
-
-    .media-item {
-
     }
 
     #film-festivals {
         display: flex;
         flex-flow: column wrap;
+        justify-content: flex-start;
 
         row-gap: 10px;
 
-        text-align: center;
+        text-align: left;
     }
 
     .festivals-container {
         display: flex;
         flex-flow: row wrap;
-        justify-content: flex-start;
+        align-items: flex-start;
+        justify-content: space-around;
 
         row-gap: 10px;
     }
 
     .festival {
-        flex: 1 1;
+        flex: 0 1;
 
         margin-left: 20px;
         margin-right: 20px;
@@ -448,7 +436,10 @@
     }
 
     #film-screener-request a h4 {
-        border: 2px solid black;
+        color: rgba(16, 20, 141, 0.57);;
+
+        background-color: whitesmoke;
+        border: 2px solid rgba(16, 20, 141, 0.57);
         border-radius: 6px;
 
         padding: 10px;
@@ -459,9 +450,238 @@
     }
 
     #film-screener-request a h4:hover {
-        border-color: #ffd5e9;
-        background-color: palevioletred;
+        background-color: rgba(16, 20, 141, 0.57);
+        color: whitesmoke;
+
+        padding: 10px;
+
+        text-align: center;
+    }
+}
+
+/*
+ *
+ * SMALL SCREENS
+ *
+ */
+@media screen and (min-width: 501px) and (max-width: 800px) {
+    /* SET BACKGROUND COLOR */
+    body {
+        background-color: whitesmoke;
+    }
+
+    /* SET FONT SIZES */
+    h1 {
+        font-family: sans-serif;
+        font-size: 48px;
+    }
+
+    h2 {
+        font-family: Overpass, sans-serif;
+        font-size: 24px;
+    }
+
+    h3 {
+        font-family: Overpass, sans-serif;
+        font-size: 16px;
+    }
+
+    h4 {
+        font-family: Overpass, sans-serif;
+        font-size: 13px;
+    }
+
+    h5 {
+        font-family: Overpass, sans-serif;
+        font-size: 12px;
+    }
+
+    /* SET HOVERABLE */
+    .hoverable * {
+        transition-duration: 0.4s;
+        transition-property: color, opacity;
+    }
+
+    .hoverable:hover {
+        color: rgba(16, 20, 141, 0.57);
+    }
+
+    /* HEADER STYLING */
+    header {
+        background-color: rgba(227, 114, 97, 0.75);
+
+        padding: 15px 25px;
+    }
+
+    .header-flex-container {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-flex-item:nth-child(1) {
+        order: 1;
+    }
+
+    .header-flex-item:nth-child(2) {
+        order: 3;
+    }
+
+    .header-flex-item:nth-child(3) {
+        order: 2;
+        width: 0;
+        height: 0;
+        visibility: collapse;
+    }
+
+    .sub-header-flex-container {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+
+        row-gap: 3px;
+    }
+
+    .sub-header-flex-item {
+        color: rgba(16, 20, 141, 0.57);
+    }
+
+    .header-flex-item:first-child .sub-header-flex-item:last-child {
+        position: relative;
+        bottom: 10px;
+    }
+
+    #title {
         color: #ffd5e9;
+        font-family: "Dancing Script", sans-serif;
+    }
+
+    .nav-flex-container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: right;
+        align-items: flex-start;
+    }
+
+    .nav-flex-item {
+        color: #ffd5e9;
+        font-size: 20px;
+
+        margin-left: 15px;
+    }
+
+    /* BODY STYLING */
+    .body-flex-container {
+        color: rgba(0, 0, 0, 0.7);
+
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+
+        padding: 50px;
+    }
+
+    .body-flex-item {
+
+    }
+
+    .body-flex-item:last-child {
+        flex-grow: 1;
+    }
+
+    /* SECTION STYLING */
+    .sub-body-flex-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        row-gap: 5px;
+    }
+
+    .sub-body-flex-item {
+        flex: 1 1 100%;
+    }
+
+    #film-title {
+        color: rgba(16, 20, 141, 0.57);
+    }
+
+    #film-role-and-release {
+        flex: 1 1;
+
+        margin-right: 20px;
+    }
+
+    #film-description {
+        flex: 1 1;
+        text-align: right;
+    }
+
+    #film-logline {
+        margin-top: 10px;
+    }
+
+    #film-cast {
+        margin-top: 10px;
+    }
+
+    .media-container {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #film-festivals {
+        display: flex;
+        flex-flow: column wrap;
+
+        justify-content: flex-start;
+
+        row-gap: 10px;
+
+        text-align: left;
+    }
+
+    .festivals-container {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: space-around;
+
+        row-gap: 10px;
+    }
+
+    .festival {
+        flex: 0 1;
+
+        margin-left: 20px;
+        margin-right: 20px;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    #film-screener-request {
+        flex: unset;
+
+        margin-top: 30px;
+    }
+
+    #film-screener-request a h4 {
+        color: rgba(16, 20, 141, 0.57);
+
+        background-color: whitesmoke;
+        border: 2px solid rgba(16, 20, 141, 0.57);
+        border-radius: 6px;
+
+        padding: 10px;
+
+        text-align: center;
+
+        transition-duration: 0.4s;
+    }
+
+    #film-screener-request a h4:hover {
+        background-color: rgba(16, 20, 141, 0.57);
+        color: whitesmoke;
 
         padding: 10px;
 
@@ -483,50 +703,35 @@
     /* SET FONT SIZES */
     h1 {
         font-family: sans-serif;
-        font-size: 32px;
-    }
-
-    h1 a {
-        color: black;
+        font-size: 48px;
     }
 
     h2 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 24px;
     }
 
-    h2 a {
-        color: black;
-    }
-
     h3 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 16px;
     }
 
-    h3 a {
-        color: black;
-    }
-
     h4 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 13px;
     }
 
-    h4 a {
-        color: black;
-    }
-
     h5 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 12px;
     }
 
-    h5 a {
-        color: black;
+    /* SET HOVERABLE */
+    .hoverable {
+        transition-duration: 0.4s;
+        transition-property: padding-right, border-right-width, opacity, color;
     }
 
-    /* SET HOVERABLE */
     .hoverable:hover {
         color: rgba(16, 20, 141, 0.57);
     }
@@ -560,16 +765,16 @@
     }
 
     .sub-header-flex-item {
+        color: rgba(16, 20, 141, 0.57);
         text-align: right;
     }
 
     #title {
-        position: relative;
-        top: 10px;
-    }
-
-    #title > a {
+        font-family: "Dancing Script", sans-serif;
         color: #ffd5e9;
+
+        position: relative;
+        top: 5px;
     }
 
     .nav-flex-container {
@@ -599,10 +804,15 @@
 
     .nav-flex-item > a:hover {
         padding-right: 4px;
-        border-right-style: unset;
+        border-right-width: 0;
+    }
+
+    .sub-header-flex-container:last-child {
+        row-gap: 5px;
     }
 
     .sub-header-flex-container:last-child > .sub-header-flex-item {
+        text-align: left;
         color: rgba(16, 20, 141, 0.57);
     }
 
@@ -612,6 +822,8 @@
 
     /* BODY STYLING */
     .body-flex-container {
+        color: rgba(0, 0, 0, 0.7);
+
         display: flex;
         flex-flow: row nowrap;
 
@@ -640,10 +852,11 @@
     }
 
     #film-title {
+        color: rgba(16, 20, 141, 0.57);
     }
 
-    #film-role {
-        flex: 0 0 123px;
+    #film-role-and-release {
+        flex: 1 1;
 
         margin-right: 20px;
     }
@@ -654,50 +867,39 @@
     }
 
     #film-logline {
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
     #film-cast {
         margin-top: 10px;
     }
 
-    #film-release {
-        margin-top: 10px;
-    }
-
     .media-container {
-        display: flex;
-        flex-flow: row wrap;
-        align-items: center;
-        justify-content: center;
-
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .media-item {
-
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     #film-festivals {
         display: flex;
         flex-flow: column wrap;
+        justify-content: flex-start;
 
         row-gap: 10px;
 
-        text-align: center;
+        text-align: left;
     }
 
     .festivals-container {
         display: flex;
         flex-flow: row wrap;
-        justify-content: flex-start;
+        align-items: flex-start;
+        justify-content: space-around;
 
         row-gap: 10px;
     }
 
     .festival {
-        flex: 1 1;
+        flex: 0 1;
 
         margin-left: 20px;
         margin-right: 20px;
@@ -712,7 +914,10 @@
     }
 
     #film-screener-request a h4 {
-        border: 2px solid black;
+        color: rgba(16, 20, 141, 0.57);;
+
+        background-color: whitesmoke;
+        border: 2px solid rgba(16, 20, 141, 0.57);
         border-radius: 6px;
 
         padding: 10px;
@@ -723,9 +928,8 @@
     }
 
     #film-screener-request a h4:hover {
-        border-color: #ffd5e9;
-        background-color: palevioletred;
-        color: #ffd5e9;
+        background-color: rgba(16, 20, 141, 0.57);
+        color: whitesmoke;
 
         padding: 10px;
 
