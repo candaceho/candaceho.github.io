@@ -12,7 +12,7 @@
     /* SET FONT SIZES */
     h1 {
         font-family: sans-serif;
-        font-size: 48px;
+        font-size: 30px;
     }
 
     h2 {
@@ -42,12 +42,12 @@
     }
 
     .hoverable:hover {
-        color: rgba(16, 20, 141, 0.57);
+        color: var(--secondary);
     }
 
     /* HEADER STYLING */
     header {
-        background-color: rgba(227, 114, 97, 0.75);
+        background-color: var(--primary);
 
         padding: 15px 25px;
     }
@@ -78,22 +78,22 @@
         display: flex;
         flex-flow: column nowrap;
         align-items: flex-start;
-
-        row-gap: 3px;
     }
 
     .sub-header-flex-item {
-        color: rgba(16, 20, 141, 0.57);
+        color: var(--neutral);
+    }
+
+    .sub-header-flex-item b {
+        color: var(--secondary);
     }
 
     .header-flex-item:first-child .sub-header-flex-item:last-child {
-        position: relative;
-        bottom: 10px;
     }
 
     #title {
-        color: #ffd5e9;
-        font-family: "Dancing Script", sans-serif;
+        color: var(--neutral);
+        font-family: "Montserrat", sans-serif;
     }
 
     .nav-flex-container {
@@ -104,7 +104,7 @@
     }
 
     .nav-flex-item {
-        color: #ffd5e9;
+        color: var(--neutral);
 
         font-size: 20px;
     }
@@ -115,7 +115,7 @@
 
     /* BODY STYLING */
     .body-flex-container {
-        color: rgba(0, 0, 0, 0.7);
+        color: var(--primary);
 
         display: flex;
         flex-flow: column nowrap;
@@ -168,7 +168,7 @@
     }
 
     .film-title {
-        color: rgba(16, 20, 141, 0.57);
+        color: var(--primary);
     }
 
     .film-role {
@@ -197,7 +197,7 @@
     /* SET FONT SIZES */
     h1 {
         font-family: sans-serif;
-        font-size: 48px;
+        font-size: 30px;
     }
 
     h2 {
@@ -227,12 +227,12 @@
     }
 
     .hoverable:hover {
-        color: rgba(16, 20, 141, 0.57);
+        color: var(--secondary);
     }
 
     /* HEADER STYLING */
     header {
-        background-color: rgba(227, 114, 97, 0.75);
+        background-color: var(--primary);
 
         padding: 15px 25px;
     }
@@ -263,22 +263,23 @@
         display: flex;
         flex-flow: column nowrap;
         align-items: flex-start;
-
-        row-gap: 3px;
     }
 
     .sub-header-flex-item {
-        color: rgba(16, 20, 141, 0.57);
+        color: var(--neutral);
+    }
+
+    .sub-header-flex-item b {
+        color: var(--secondary);
     }
 
     .header-flex-item:first-child .sub-header-flex-item:last-child {
-        position: relative;
-        bottom: 10px;
+
     }
 
     #title {
-        color: #ffd5e9;
-        font-family: "Dancing Script", sans-serif;
+        color: var(--neutral);
+        font-family: "Montserrat", sans-serif;
     }
 
     .nav-flex-container {
@@ -289,7 +290,7 @@
     }
 
     .nav-flex-item {
-        color: #ffd5e9;
+        color: var(--neutral);
         font-size: 20px;
 
         margin-left: 15px;
@@ -297,7 +298,7 @@
 
     /* BODY STYLING */
     .body-flex-container {
-        color: rgba(0, 0, 0, 0.7);
+        color: var(--primary);
 
         display: flex;
         flex-flow: column nowrap;
@@ -350,7 +351,7 @@
     }
 
     .film-title {
-        color: rgba(16, 20, 141, 0.57);
+        color: var(--primary);
 
         order: 1;
         flex: 2 0 100%;
@@ -396,7 +397,7 @@
     /* SET FONT SIZES */
     h1 {
         font-family: sans-serif;
-        font-size: 48px;
+        font-size: 34px;
     }
 
     h2 {
@@ -426,19 +427,19 @@
     }
 
     .hoverable:hover {
-        color: rgba(16, 20, 141, 0.57);
+        color: var(--secondary);
     }
 
     /* HEADER STYLING */
     header {
-        background-color: rgba(227, 114, 97, 0.75);
+        background-color: var(--primary);
 
         position: fixed;
         width: 300px;
         padding-left: 25px;
         padding-right: 50px;
-        height: 100%;
         min-height: 320px;
+        height: 100%;
     }
 
     .header-flex-container {
@@ -458,19 +459,22 @@
     }
 
     .sub-header-flex-item {
-        color: rgba(16, 20, 141, 0.57);
+        color: var(--neutral);
         text-align: right;
     }
 
+    .sub-header-flex-item b {
+        color: var(--secondary);
+    }
+
     #title {
-        font-family: "Dancing Script", sans-serif;
+        font-family: "Montserrat", sans-serif;
+        color: var(--neutral);
 
         position: relative;
-        top: 5px;
     }
 
     #title a {
-        color: #ffd5e9;
     }
 
     .nav-flex-container {
@@ -490,12 +494,12 @@
     }
 
     .nav-flex-item > a {
-        color: #ffd5e9;
+        color: var(--neutral);
 
         padding-right: 8px;
         border-right-style: solid;
         border-right-width: 3px;
-        border-color: rgba(16, 20, 141, 0.57);
+        border-color: var(--secondary);
     }
 
     .nav-flex-item > a:hover {
@@ -508,8 +512,12 @@
     }
 
     .sub-header-flex-container:last-child > .sub-header-flex-item {
-        color: rgba(16, 20, 141, 0.57);
         text-align: left;
+        color: var(--secondary);
+    }
+
+    .sub-header-flex-container:last-child > .sub-header-flex-item > a {
+        color: var(--neutral);
     }
 
     .sub-header-flex-container:last-child > .sub-header-flex-item > a {
@@ -518,7 +526,7 @@
 
     /* BODY STYLING */
     .body-flex-container {
-        color: rgba(0, 0, 0, 0.7);
+        color: var(--primary);
 
         display: flex;
         flex-flow: row nowrap;
@@ -576,7 +584,7 @@
     }
 
     .film-title {
-        color: rgba(16, 20, 141, 0.57);
+        color: var(--primary);
 
         order: 1;
         flex: 2 0 100%;
@@ -616,13 +624,13 @@
 @media screen and (min-width: 1100px) {
     /* SET BACKGROUND COLOR */
     body {
-        background-color: var(--ash-gray);
+        background-color: whitesmoke;
     }
 
     /* SET FONT SIZES */
     h1 {
         font-family: sans-serif;
-        font-size: 48px;
+        font-size: 34px;
     }
 
     h2 {
@@ -652,12 +660,12 @@
     }
 
     .hoverable:hover {
-        color: var(--cambridge-blue);
+        color: var(--secondary);
     }
 
     /* HEADER STYLING */
     header {
-        background-color: var(--dark-slate-gray);
+        background-color: var(--primary);
 
         position: fixed;
         width: 300px;
@@ -684,16 +692,19 @@
     }
 
     .sub-header-flex-item {
-        color: var(--cambridge-blue);
+        color: var(--neutral);
         text-align: right;
     }
 
+    .sub-header-flex-item b {
+        color: var(--secondary);
+    }
+
     #title {
-        font-family: "Dancing Script", sans-serif;
-        color: whitesmoke;
+        font-family: "Montserrat", sans-serif;
+        color: var(--neutral);
 
         position: relative;
-        top: 5px;
     }
 
     #title a {
@@ -716,12 +727,12 @@
     }
 
     .nav-flex-item > a {
-        color: whitesmoke;
+        color: var(--neutral);
 
         padding-right: 8px;
         border-right-style: solid;
         border-right-width: 3px;
-        border-color: var(--cambridge-blue);
+        border-color: var(--secondary);
     }
 
     .nav-flex-item > a:hover {
@@ -735,16 +746,16 @@
 
     .sub-header-flex-container:last-child > .sub-header-flex-item {
         text-align: left;
-        color: var(--cambridge-blue);
+        color: var(--secondary);
     }
 
     .sub-header-flex-container:last-child > .sub-header-flex-item > a {
-        color: whitesmoke;
+        color: var(--neutral);
     }
 
     /* BODY STYLING */
     .body-flex-container {
-        color: var(--dark-slate-gray);
+        color: var(--primary);
 
         display: flex;
         flex-flow: row nowrap;
@@ -847,7 +858,7 @@
     }
 
     .film-title {
-        color: var(--charcoal);
+        color: var(--primary);
     }
 
     .film-role {

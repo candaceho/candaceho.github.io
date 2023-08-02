@@ -747,7 +747,7 @@
 
     /* HEADER STYLING */
     header {
-        background-color: rgba(227, 114, 97, 0.75);
+        background-color: var(--lilac);
 
         position: fixed;
         width: 300px;
@@ -774,13 +774,13 @@
     }
 
     .sub-header-flex-item {
-        color: rgba(16, 20, 141, 0.57);
+        color: var(--champagne);
         text-align: right;
     }
 
     #title {
         font-family: "Dancing Script", sans-serif;
-        color: #ffd5e9;
+        color: rgba(16, 20, 141, 0.57);
 
         position: relative;
         top: 5px;
@@ -803,7 +803,7 @@
     }
 
     .nav-flex-item > a {
-        color: #ffd5e9;
+        color: var(--champagne);
 
         padding-right: 8px;
         border-right-style: solid;
@@ -826,7 +826,7 @@
     }
 
     .sub-header-flex-container:last-child > .sub-header-flex-item > a {
-        color: #ffd5e9;
+        color: var(--champagne);
     }
 
     /* BODY STYLING */
@@ -892,7 +892,46 @@
         margin-bottom: 30px;
     }
 
+    .laurels-container {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .laurels-row {
+        flex: 1 1 100%;
+
+        margin-left: 100px;
+        margin-right: 100px;
+
+        display: flex;
+        flex-flow: row wrap;
+
+        align-items: center;
+        justify-content: center;
+    }
+
+    .laurel {
+        flex: 0 2;
+        margin-left: 100px;
+        margin-right: 100px;
+
+        max-width: 300px;
+        max-height: 100px;
+    }
+
+    .laurel img {
+        object-fit: contain;
+
+        width: inherit;
+        max-width: inherit;
+        max-height: inherit;
+    }
+
     #film-festivals {
+        margin-top: 20px;
+
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
