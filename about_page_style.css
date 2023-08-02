@@ -3,68 +3,61 @@
  * EXTRA SMALL SCREENS
  *
  */
-@media screen and (max-width: 500px) {
+@media screen and (min-width: 451px) and (max-width: 500px) {
     /* SET BACKGROUND COLOR */
     body {
-        background-color: whitesmoke;
+        background-color: whitesmoke; /*var(--background);*/
     }
 
     /* SET FONT SIZES */
     h1 {
-        font-family: sans-serif;
-        font-size: 32px;
-    }
+        font-family: Urbanist, sans-serif;
+        font-size: 34px;
 
-    h1 a {
+        font-weight: 400;
     }
 
     h2 {
-        font-family: sans-serif;
-        font-size: 24px;
-    }
-
-    h2 a {
+        font-family: Overpass, sans-serif;
+        font-size: 20px;
     }
 
     h3 {
-        font-family: sans-serif;
-        font-size: 16px;
-    }
-
-    h3 a {
+        font-family: Overpass, sans-serif;
+        font-size: 14px;
     }
 
     h4 {
-        font-family: sans-serif;
-        font-size: 13px;
-    }
-
-    h4 a {
-    }
-
-    h5 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 12px;
     }
 
-    h5 a {
+    h5 {
+        font-family: Overpass, sans-serif;
+        font-size: 10px;
+    }
+
+    /* SET HOVERABLE */
+    .hoverable {
+        transition-duration: 0.3s;
+        transition-property: color, opacity;
     }
 
     .hoverable:hover {
-        color: rgba(16, 20, 141, 0.57);
+        color: var(--secondary);
     }
 
     /* HEADER STYLING */
     header {
-        background-color: rgba(227, 114, 97, 0.75);
+        background-color: whitesmoke;
 
-        padding: 25px;
+        padding: 25px 50px;
     }
 
     .header-flex-container {
         display: flex;
         flex-flow: row nowrap;
-        align-items: flex-end;
+        align-items: center;
         justify-content: space-between;
     }
 
@@ -87,19 +80,21 @@
         display: flex;
         flex-flow: column nowrap;
         align-items: flex-start;
-
-        row-gap: 3px;
     }
 
     .sub-header-flex-item {
-        color: rgba(16, 20, 141, 0.57);
+        color: var(--primary);
+    }
+
+    .sub-header-flex-item b {
+        color: var(--secondary);
+    }
+
+    .header-flex-item:first-child .sub-header-flex-item:last-child {
     }
 
     #title {
-        color: #ffd5e9;
-
-        position: relative;
-        top: 10px;
+        color: var(--primary);
     }
 
     .nav-flex-container {
@@ -110,22 +105,28 @@
     }
 
     .nav-flex-item {
-        color: #ffd5e9;
+        color: var(--primary);
 
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .nav-flex-item:last-child {
         margin-top: 0;
     }
 
+    .non-current-link {
+        color: var(--primary);
+    }
+
     /* BODY STYLING */
     .body-flex-container {
+        color: whitesmoke;
+
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
 
-        padding: 50px;
+        padding: 0 50px 25px;
     }
 
     .body-flex-item {
@@ -139,16 +140,105 @@
     /* SECTION STYLING */
     .sub-body-flex-container {
         display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        padding: 20px;
+        background-color: var(--primary);
+    }
+
+    .sub-body-flex-item {
+        flex: 1 1 100%;
+    }
+
+    #film-title {
+    }
+
+    #film-role-and-release {
+        flex: 1 1;
+
+        margin-right: 20px;
+    }
+
+    #film-description {
+        flex: 1 1;
+        text-align: right;
+    }
+
+    #film-cast {
+        margin-top: 15px;
+    }
+
+    #film-logline {
+        margin-top: 15px;
+    }
+
+    .extra-content {
+        margin-top: 15px;
+    }
+
+    .media-container {
+        margin-top: 20px;
+        margin-bottom: 20px;
+
+        background-color: whitesmoke;
+        padding: 5px;
+    }
+
+    #film-festivals {
+        display: flex;
         flex-flow: column wrap;
         justify-content: center;
-        column-gap: 25px;
+
+        row-gap: 10px;
+
+        text-align: center;
     }
 
-    .sub-body-flex-item:first-child {
+    .festivals-container {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: flex-start;
+        justify-content: space-around;
+
+        row-gap: 10px;
     }
 
-    .sub-body-flex-item:last-child {
-        visibility: collapse;
+    .festival {
+        flex: 1 1 auto;
+
+        margin-left: 10px;
+        margin-right: 10px;
+        text-align: center;
+    }
+
+    #film-screener-request {
+        flex: unset;
+
+        margin-top: 30px;
+    }
+
+    #film-screener-request a h4 {
+        color: rgba(16, 20, 141, 0.57);;
+
+        background-color: whitesmoke;
+        border: 2px solid rgba(16, 20, 141, 0.57);
+        border-radius: 6px;
+
+        padding: 10px;
+
+        text-align: center;
+
+        transition-duration: 0.4s;
+    }
+
+    #film-screener-request a h4:hover {
+        background-color: rgba(16, 20, 141, 0.57);
+        color: whitesmoke;
+
+        padding: 10px;
+
+        text-align: center;
     }
 }
 
@@ -160,45 +250,52 @@
 @media screen and (min-width: 501px) and (max-width: 800px) {
     /* SET BACKGROUND COLOR */
     body {
-        background-color: whitesmoke;
+        background-color: whitesmoke; /*var(--background);*/
     }
 
     /* SET FONT SIZES */
     h1 {
-        font-family: sans-serif;
-        font-size: 32px;
+        font-family: Urbanist, sans-serif;
+        font-size: 34px;
+
+        font-weight: 400;
     }
 
     h2 {
-        font-family: sans-serif;
-        font-size: 24px;
+        font-family: Overpass, sans-serif;
+        font-size: 20px;
     }
 
     h3 {
-        font-family: sans-serif;
-        font-size: 16px;
+        font-family: Overpass, sans-serif;
+        font-size: 14px;
     }
 
     h4 {
-        font-family: sans-serif;
-        font-size: 13px;
-    }
-
-    h5 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 12px;
     }
 
+    h5 {
+        font-family: Overpass, sans-serif;
+        font-size: 10px;
+    }
+
     /* SET HOVERABLE */
+    .hoverable {
+        transition-duration: 0.3s;
+        transition-property: color, opacity;
+    }
+
     .hoverable:hover {
-        color: rgba(16, 20, 141, 0.57);
+        color: var(--secondary);
     }
 
     /* HEADER STYLING */
     header {
-        background-color: rgba(227, 114, 97, 0.75);
+        background-color: whitesmoke;
 
-        padding: 25px;
+        padding: 25px 50px;
     }
 
     .header-flex-container {
@@ -227,19 +324,22 @@
         display: flex;
         flex-flow: column nowrap;
         align-items: flex-start;
-
-        row-gap: 3px;
     }
 
     .sub-header-flex-item {
-        color: rgba(16, 20, 141, 0.57);
+        color: var(--primary);
+    }
+
+    .sub-header-flex-item b {
+        color: var(--secondary);
+    }
+
+    .header-flex-item:first-child .sub-header-flex-item:last-child {
+
     }
 
     #title {
-        color: #ffd5e9;
-
-        position: relative;
-        top: 10px;
+        color: var(--primary);
     }
 
     .nav-flex-container {
@@ -250,19 +350,25 @@
     }
 
     .nav-flex-item {
-        color: #ffd5e9;
-        font-size: 20px;
+        color: var(--primary);
+        font-size: 16px;
 
         margin-left: 15px;
     }
 
+    .non-current-link {
+        color: var(--primary);
+    }
+
     /* BODY STYLING */
     .body-flex-container {
+        color: whitesmoke;
+
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
 
-        padding: 50px;
+        padding: 0 50px 25px;
     }
 
     .body-flex-item {
@@ -276,17 +382,15 @@
     /* SECTION STYLING */
     .sub-body-flex-container {
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: row wrap;
         justify-content: center;
-        column-gap: 25px;
+
+        padding: 20px;
+        background-color: var(--primary);
     }
 
-    .sub-body-flex-item:first-child {
-        order: 2;
-    }
+    .sub-body-flex-item {
 
-    .sub-body-flex-item:last-child {
-        order: 1;
     }
 }
 
@@ -298,67 +402,54 @@
 @media screen and (min-width: 801px) {
     /* SET BACKGROUND COLOR */
     body {
-        background-color: whitesmoke;
+        background-color: whitesmoke; /*var(--background);*/
     }
 
     /* SET FONT SIZES */
     h1 {
-        font-family: sans-serif;
-        font-size: 32px;
-    }
+        font-family: Urbanist, sans-serif;
+        font-size: 34px;
 
-    h1 a {
-        color: black;
+        font-weight: 400;
     }
 
     h2 {
-        font-family: sans-serif;
-        font-size: 24px;
-    }
-
-    h2 a {
-        color: black;
+        font-family: Overpass, sans-serif;
+        font-size: 20px;
     }
 
     h3 {
-        font-family: sans-serif;
-        font-size: 16px;
-    }
-
-    h3 a {
-        color: black;
+        font-family: Overpass, sans-serif;
+        font-size: 14px;
     }
 
     h4 {
-        font-family: sans-serif;
-        font-size: 13px;
-    }
-
-    h4 a {
-        color: black;
-    }
-
-    h5 {
-        font-family: sans-serif;
+        font-family: Overpass, sans-serif;
         font-size: 12px;
     }
 
-    h5 a {
-        color: black;
+    h5 {
+        font-family: Overpass, sans-serif;
+        font-size: 10px;
     }
 
     /* SET HOVERABLE */
+    .hoverable {
+        transition-duration: 0.3s;
+        transition-property: padding-right, opacity, color;
+    }
+
     .hoverable:hover {
-        color: rgba(16, 20, 141, 0.57);
+        color: var(--secondary);
     }
 
     /* HEADER STYLING */
     header {
-        background-color: rgba(227, 114, 97, 0.75);
+        background-color: whitesmoke; /*var(--primary);*/
 
         position: fixed;
-        width: 300px;
-        padding-left: 25px;
+        width: 285px;
+        padding-left: 50px;
         padding-right: 50px;
         min-height: 320px;
         height: 100%;
@@ -381,16 +472,16 @@
     }
 
     .sub-header-flex-item {
+        color: var(--primary);
         text-align: right;
     }
 
-    #title {
-        position: relative;
-        top: 10px;
+    .sub-header-flex-item b {
+        color: var(--secondary);
     }
 
-    #title > a {
-        color: #ffd5e9;
+    #title {
+        color: var(--primary);
     }
 
     .nav-flex-container {
@@ -409,38 +500,47 @@
         padding-bottom: 5px;
     }
 
-    .nav-flex-item > a {
-        color: #ffd5e9;
+    .current-link {
+        color: var(--secondary);
+        padding-right: 4px;
+        border-style: unset;
+    }
+
+    .non-current-link {
+        color: var(--primary);
 
         padding-right: 8px;
         border-right-style: solid;
         border-right-width: 3px;
-        border-color: rgba(16, 20, 141, 0.57);
+        border-color: var(--secondary);
     }
 
-    .nav-flex-item > a:hover {
+    .nav-flex-item a:hover {
         padding-right: 4px;
-        border-right-style: unset;
+        border-style: unset;
+    }
+
+    .sub-header-flex-container:last-child {
+        row-gap: 5px;
     }
 
     .sub-header-flex-container:last-child > .sub-header-flex-item {
-        color: rgba(16, 20, 141, 0.57);
+        text-align: left;
+        color: var(--secondary);
     }
 
     .sub-header-flex-container:last-child > .sub-header-flex-item > a {
-        color: #ffd5e9;
+        color: var(--primary);
     }
 
     /* BODY STYLING */
     .body-flex-container {
+        color: whitesmoke;
+
         display: flex;
         flex-flow: row nowrap;
-        justify-content: center;
 
-        position: absolute;
-        min-height: 100%;
-        height: 100%;
-        padding: 50px;
+        padding: 25px 25px 25px 50px;
     }
 
     .body-flex-item {
@@ -448,28 +548,25 @@
     }
 
     .body-flex-item:first-child {
-        min-width: 300px;
-        width: 300px;
+        min-width: 235px;
+        width: 235px;
     }
 
     /* SECTION STYLING */
     .sub-body-flex-container {
         display: flex;
         flex-flow: row wrap;
-        align-items: center;
-        justify-content: space-between;
-        column-gap: 25px;
+        justify-content: center;
+
+        padding: 20px;
+        background-color: var(--primary);
     }
 
     .sub-body-flex-item {
-        flex: 0 0 45%;
+
     }
 
-    .sub-body-flex-item:last-child {
-        max-width: 400px;
+    .socials-flex-container {
+        visibility: collapse;
     }
-
-    /*.sub-body-flex-item:last-child {
-        max-width: 300px;
-    }*/
 }
