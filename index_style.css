@@ -37,7 +37,7 @@
 
     /* SET HOVERABLE */
     .hoverable {
-        transition-duration: 0.4s;
+        transition-duration: 0.3s;
         transition-property: color, opacity;
     }
 
@@ -149,6 +149,10 @@
         order: 1;
     }
 
+    .section-image img {
+        transition-duration: 0.3s;
+    }
+
     .section-image img:hover {
         opacity: 80%;
     }
@@ -217,8 +221,8 @@
     }
 
     /* SET HOVERABLE */
-    .hoverable * {
-        transition-duration: 0.4s;
+    .hoverable {
+        transition-duration: 0.3s;
         transition-property: color, opacity;
     }
 
@@ -327,6 +331,10 @@
         order: 1;
     }
 
+    .section-image img {
+        transition-duration: 0.3s;
+    }
+
     .section-image img:hover {
         opacity: 80%;
     }
@@ -379,7 +387,7 @@
  * MEDIUM SCREENS
  *
  */
-@media screen and (min-width: 801px) and (max-width: 1100px) {
+@media screen and (min-width: 801px) and (max-width: 1099px) {
     /* SET BACKGROUND COLOR */
     body {
         background-color: whitesmoke;
@@ -413,8 +421,8 @@
 
     /* SET HOVERABLE */
     .hoverable {
-        transition-duration: 0.4s;
-        transition-property: padding-right, border-right-width, opacity, color;
+        transition-duration: 0.3s;
+        transition-property: padding-right, opacity, color;
     }
 
     .hoverable:hover {
@@ -492,7 +500,7 @@
 
     .nav-flex-item > a:hover {
         padding-right: 4px;
-        border-right-width: 0;
+        border-style: unset;
     }
 
     .sub-header-flex-container:last-child {
@@ -547,6 +555,10 @@
 
     .section-image {
         order: 1;
+    }
+
+    .section-image img {
+        transition-duration: 0.3s;
     }
 
     .section-image img:hover {
@@ -604,7 +616,7 @@
 @media screen and (min-width: 1100px) {
     /* SET BACKGROUND COLOR */
     body {
-        background-color: whitesmoke;
+        background-color: var(--ash-gray);
     }
 
     /* SET FONT SIZES */
@@ -635,17 +647,17 @@
 
     /* SET HOVERABLE */
     .hoverable {
-        transition-duration: 0.4s;
-        transition-property: padding-right, border-right-width, opacity, color;
+        transition-duration: 0.3s;
+        transition-property: padding-right, opacity, color;
     }
 
     .hoverable:hover {
-        color: rgba(16, 20, 141, 0.57);
+        color: var(--cambridge-blue);
     }
 
     /* HEADER STYLING */
     header {
-        background-color: rgba(227, 114, 97, 0.75);
+        background-color: var(--dark-slate-gray);
 
         position: fixed;
         width: 300px;
@@ -672,19 +684,19 @@
     }
 
     .sub-header-flex-item {
-        color: rgba(16, 20, 141, 0.57);
+        color: var(--cambridge-blue);
         text-align: right;
     }
 
     #title {
         font-family: "Dancing Script", sans-serif;
+        color: whitesmoke;
 
         position: relative;
         top: 5px;
     }
 
     #title a {
-        color: #ffd5e9;
     }
 
     .nav-flex-container {
@@ -704,17 +716,17 @@
     }
 
     .nav-flex-item > a {
-        color: #ffd5e9;
+        color: whitesmoke;
 
         padding-right: 8px;
         border-right-style: solid;
         border-right-width: 3px;
-        border-color: rgba(16, 20, 141, 0.57);
+        border-color: var(--cambridge-blue);
     }
 
     .nav-flex-item > a:hover {
         padding-right: 4px;
-        border-right-width: 0;
+        border-style: unset;
     }
 
     .sub-header-flex-container:last-child {
@@ -723,16 +735,16 @@
 
     .sub-header-flex-container:last-child > .sub-header-flex-item {
         text-align: left;
-        color: rgba(16, 20, 141, 0.57);
+        color: var(--cambridge-blue);
     }
 
     .sub-header-flex-container:last-child > .sub-header-flex-item > a {
-        color: #ffd5e9;
+        color: whitesmoke;
     }
 
     /* BODY STYLING */
     .body-flex-container {
-        color: rgba(0, 0, 0, 0.7);
+        color: var(--dark-slate-gray);
 
         display: flex;
         flex-flow: row nowrap;
@@ -821,6 +833,7 @@
 
     .section-image img {
         object-fit: contain;
+        transition-duration: 0.3s;
     }
 
     .section-image img:hover {
@@ -828,13 +841,13 @@
     }
 
     .section-content-main {
-        flex: 1 0 auto;
+        flex: 1 0 280px;
 
         row-gap: 5px;
     }
 
     .film-title {
-        color: rgba(16, 20, 141, 0.57);
+        color: var(--charcoal);
     }
 
     .film-role {

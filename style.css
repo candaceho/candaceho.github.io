@@ -100,3 +100,28 @@ a {
     font-family: "Overpass";
     src: url("/assets/fonts/Overpass/Overpass-VariableFont_wght.ttf");
 }
+
+/*
+ *
+ * COLORS
+ *
+ */
+:root {
+    --thistle: #d4cbe5ff;
+    --french-gray: #cfc7d2ff;
+    --rose-quartz: #bea8aaff;
+    --khaki: #9e9885ff;
+    --reseda-green: #7c7f65ff;
+
+    --ash-gray: #cad2c5ff;
+    --cambridge-blue: #84a98cff;
+    --hookers-green: #52796fff;
+    --dark-slate-gray: #354f52ff;
+    --charcoal: #2f3e46ff;
+
+    --fawn: #f7b267ff;
+    --atomic-tangerine: #f79d65ff;
+    --coral: #f4845fff;
+    --bittersweet: #f27059ff;
+    --bittersweet-2: #f25c54ff;
+}

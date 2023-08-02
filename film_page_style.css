@@ -156,12 +156,16 @@
         flex: 1 1 100%;
     }
 
-    #film-logline {
-        margin-top: 10px;
+    #film-cast {
+        margin-top: 15px;
     }
 
-    #film-cast {
-        margin-top: 10px;
+    #film-logline {
+        margin-top: 15px;
+    }
+
+    .extra-content {
+        margin-top: 15px;
     }
 
     .media-container {
@@ -172,11 +176,11 @@
     #film-festivals {
         display: flex;
         flex-flow: column wrap;
-        justify-content: flex-start;
+        justify-content: center;
 
         row-gap: 10px;
 
-        text-align: left;
+        text-align: center;
     }
 
     .festivals-container {
@@ -189,12 +193,11 @@
     }
 
     .festival {
-        flex: 0 1;
+        flex: 1 1 auto;
 
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
         text-align: center;
-        white-space: nowrap;
     }
 
     #film-screener-request {
@@ -388,12 +391,16 @@
         text-align: right;
     }
 
-    #film-logline {
-        margin-top: 10px;
+    #film-cast {
+        margin-top: 15px;
     }
 
-    #film-cast {
-        margin-top: 10px;
+    #film-logline {
+        margin-top: 15px;
+    }
+
+    .extra-content {
+        margin-top: 15px;
     }
 
     .media-container {
@@ -404,11 +411,11 @@
     #film-festivals {
         display: flex;
         flex-flow: column wrap;
-        justify-content: flex-start;
+        justify-content: center;
 
         row-gap: 10px;
 
-        text-align: left;
+        text-align: center;
     }
 
     .festivals-container {
@@ -421,12 +428,11 @@
     }
 
     .festival {
-        flex: 0 1;
+        flex: 1 1 auto;
 
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
         text-align: center;
-        white-space: nowrap;
     }
 
     #film-screener-request {
@@ -617,28 +623,32 @@
         text-align: right;
     }
 
-    #film-logline {
-        margin-top: 10px;
+    #film-cast {
+        margin-top: 20px;
     }
 
-    #film-cast {
-        margin-top: 10px;
+    #film-logline {
+        margin-top: 20px;
+    }
+
+    .extra-content {
+        margin-top: 20px;
     }
 
     .media-container {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 
     #film-festivals {
         display: flex;
         flex-flow: column wrap;
 
-        justify-content: flex-start;
+        justify-content: center;
 
         row-gap: 10px;
 
-        text-align: left;
+        text-align: center;
     }
 
     .festivals-container {
@@ -651,12 +661,11 @@
     }
 
     .festival {
-        flex: 0 1;
+        flex: 1 1 auto;
 
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
         text-align: center;
-        white-space: nowrap;
     }
 
     #film-screener-request {
@@ -729,7 +738,7 @@
     /* SET HOVERABLE */
     .hoverable {
         transition-duration: 0.4s;
-        transition-property: padding-right, border-right-width, opacity, color;
+        transition-property: padding-right, opacity, color;
     }
 
     .hoverable:hover {
@@ -804,7 +813,7 @@
 
     .nav-flex-item > a:hover {
         padding-right: 4px;
-        border-right-width: 0;
+        border-style: unset;
     }
 
     .sub-header-flex-container:last-child {
@@ -866,12 +875,16 @@
         text-align: right;
     }
 
+    #film-cast {
+        margin-top: 20px;
+    }
+
     #film-logline {
         margin-top: 20px;
     }
 
-    #film-cast {
-        margin-top: 10px;
+    .extra-content {
+        margin-top: 20px;
     }
 
     .media-container {
@@ -882,11 +895,11 @@
     #film-festivals {
         display: flex;
         flex-flow: column wrap;
-        justify-content: flex-start;
+        justify-content: center;
 
         row-gap: 10px;
 
-        text-align: left;
+        text-align: center;
     }
 
     .festivals-container {
@@ -899,12 +912,11 @@
     }
 
     .festival {
-        flex: 0 1;
+        flex: 1 1 auto;
 
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
         text-align: center;
-        white-space: nowrap;
     }
 
     #film-screener-request {
