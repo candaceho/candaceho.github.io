@@ -6,50 +6,52 @@
 @media screen and (max-width: 450px) {
     /* SET BACKGROUND COLOR */
     body {
-        background-color: whitesmoke;
+        background-color: whitesmoke; /*var(--background);*/
     }
 
     /* SET FONT SIZES */
     h1 {
-        font-family: sans-serif;
-        font-size: 48px;
+        font-family: Urbanist, sans-serif;
+        font-size: 34px;
+
+        font-weight: 400;
     }
 
     h2 {
         font-family: Overpass, sans-serif;
-        font-size: 24px;
+        font-size: 20px;
     }
 
     h3 {
         font-family: Overpass, sans-serif;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     h4 {
         font-family: Overpass, sans-serif;
-        font-size: 13px;
+        font-size: 12px;
     }
 
     h5 {
         font-family: Overpass, sans-serif;
-        font-size: 12px;
+        font-size: 10px;
     }
 
     /* SET HOVERABLE */
     .hoverable {
-        transition-duration: 0.4s;
+        transition-duration: 0.3s;
         transition-property: color, opacity;
     }
 
     .hoverable:hover {
-        color: rgba(16, 20, 141, 0.57);
+        color: var(--secondary);
     }
 
     /* HEADER STYLING */
     header {
-        background-color: rgba(227, 114, 97, 0.75);
+        background-color: whitesmoke;
 
-        padding: 15px 25px;
+        padding: 25px 50px;
     }
 
     .header-flex-container {
@@ -78,22 +80,21 @@
         display: flex;
         flex-flow: column nowrap;
         align-items: flex-start;
-
-        row-gap: 3px;
     }
 
     .sub-header-flex-item {
-        color: rgba(16, 20, 141, 0.57);
+        color: var(--primary);
+    }
+
+    .sub-header-flex-item b {
+        color: var(--secondary);
     }
 
     .header-flex-item:first-child .sub-header-flex-item:last-child {
-        position: relative;
-        bottom: 10px;
     }
 
     #title {
-        color: #ffd5e9;
-        font-family: "Dancing Script", sans-serif;
+        color: var(--primary);
     }
 
     .nav-flex-container {
@@ -104,24 +105,28 @@
     }
 
     .nav-flex-item {
-        color: #ffd5e9;
+        color: var(--primary);
 
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .nav-flex-item:last-child {
         margin-top: 0;
     }
 
+    .non-current-link {
+        color: var(--primary);
+    }
+
     /* BODY STYLING */
     .body-flex-container {
-        color: rgba(0, 0, 0, 0.7);
+        color: whitesmoke;
 
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
 
-        padding: 50px;
+        padding: 0 50px 25px;
     }
 
     .body-flex-item {
@@ -137,7 +142,9 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        row-gap: 5px;
+
+        padding: 20px;
+        background-color: var(--primary);
     }
 
     .sub-body-flex-item {
@@ -145,7 +152,6 @@
     }
 
     #film-title {
-        color: rgba(16, 20, 141, 0.57);
     }
 
     #film-role-and-release {
@@ -153,6 +159,7 @@
     }
 
     #film-description {
+        margin-top: 5px;
         flex: 1 1 100%;
     }
 
@@ -171,6 +178,9 @@
     .media-container {
         margin-top: 20px;
         margin-bottom: 20px;
+
+        background-color: whitesmoke;
+        padding: 5px;
     }
 
     #film-festivals {
@@ -238,50 +248,52 @@
 @media screen and (min-width: 451px) and (max-width: 500px) {
     /* SET BACKGROUND COLOR */
     body {
-        background-color: whitesmoke;
+        background-color: whitesmoke; /*var(--background);*/
     }
 
     /* SET FONT SIZES */
     h1 {
-        font-family: sans-serif;
-        font-size: 48px;
+        font-family: Urbanist, sans-serif;
+        font-size: 34px;
+
+        font-weight: 400;
     }
 
     h2 {
         font-family: Overpass, sans-serif;
-        font-size: 24px;
+        font-size: 20px;
     }
 
     h3 {
         font-family: Overpass, sans-serif;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     h4 {
         font-family: Overpass, sans-serif;
-        font-size: 13px;
+        font-size: 12px;
     }
 
     h5 {
         font-family: Overpass, sans-serif;
-        font-size: 12px;
+        font-size: 10px;
     }
 
     /* SET HOVERABLE */
     .hoverable {
-        transition-duration: 0.4s;
+        transition-duration: 0.3s;
         transition-property: color, opacity;
     }
 
     .hoverable:hover {
-        color: rgba(16, 20, 141, 0.57);
+        color: var(--secondary);
     }
 
     /* HEADER STYLING */
     header {
-        background-color: rgba(227, 114, 97, 0.75);
+        background-color: whitesmoke;
 
-        padding: 15px 25px;
+        padding: 25px 50px;
     }
 
     .header-flex-container {
@@ -310,22 +322,21 @@
         display: flex;
         flex-flow: column nowrap;
         align-items: flex-start;
-
-        row-gap: 3px;
     }
 
     .sub-header-flex-item {
-        color: rgba(16, 20, 141, 0.57);
+        color: var(--primary);
+    }
+
+    .sub-header-flex-item b {
+        color: var(--secondary);
     }
 
     .header-flex-item:first-child .sub-header-flex-item:last-child {
-        position: relative;
-        bottom: 10px;
     }
 
     #title {
-        color: #ffd5e9;
-        font-family: "Dancing Script", sans-serif;
+        color: var(--primary);
     }
 
     .nav-flex-container {
@@ -336,24 +347,28 @@
     }
 
     .nav-flex-item {
-        color: #ffd5e9;
+        color: var(--primary);
 
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .nav-flex-item:last-child {
         margin-top: 0;
     }
 
+    .non-current-link {
+        color: var(--primary);
+    }
+
     /* BODY STYLING */
     .body-flex-container {
-        color: rgba(0, 0, 0, 0.7);
+        color: whitesmoke;
 
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
 
-        padding: 50px;
+        padding: 0 50px 25px;
     }
 
     .body-flex-item {
@@ -369,7 +384,9 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        row-gap: 5px;
+
+        padding: 20px;
+        background-color: var(--primary);
     }
 
     .sub-body-flex-item {
@@ -377,7 +394,6 @@
     }
 
     #film-title {
-        color: rgba(16, 20, 141, 0.57);
     }
 
     #film-role-and-release {
@@ -406,6 +422,9 @@
     .media-container {
         margin-top: 20px;
         margin-bottom: 20px;
+
+        background-color: whitesmoke;
+        padding: 5px;
     }
 
     #film-festivals {
@@ -473,50 +492,52 @@
 @media screen and (min-width: 501px) and (max-width: 800px) {
     /* SET BACKGROUND COLOR */
     body {
-        background-color: whitesmoke;
+        background-color: whitesmoke; /*var(--background);*/
     }
 
     /* SET FONT SIZES */
     h1 {
-        font-family: sans-serif;
-        font-size: 48px;
+        font-family: Urbanist, sans-serif;
+        font-size: 34px;
+
+        font-weight: 400;
     }
 
     h2 {
         font-family: Overpass, sans-serif;
-        font-size: 24px;
+        font-size: 20px;
     }
 
     h3 {
         font-family: Overpass, sans-serif;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     h4 {
         font-family: Overpass, sans-serif;
-        font-size: 13px;
+        font-size: 12px;
     }
 
     h5 {
         font-family: Overpass, sans-serif;
-        font-size: 12px;
+        font-size: 10px;
     }
 
     /* SET HOVERABLE */
-    .hoverable * {
-        transition-duration: 0.4s;
+    .hoverable {
+        transition-duration: 0.3s;
         transition-property: color, opacity;
     }
 
     .hoverable:hover {
-        color: rgba(16, 20, 141, 0.57);
+        color: var(--secondary);
     }
 
     /* HEADER STYLING */
     header {
-        background-color: rgba(227, 114, 97, 0.75);
+        background-color: whitesmoke;
 
-        padding: 15px 25px;
+        padding: 25px 50px;
     }
 
     .header-flex-container {
@@ -545,22 +566,22 @@
         display: flex;
         flex-flow: column nowrap;
         align-items: flex-start;
-
-        row-gap: 3px;
     }
 
     .sub-header-flex-item {
-        color: rgba(16, 20, 141, 0.57);
+        color: var(--primary);
+    }
+
+    .sub-header-flex-item b {
+        color: var(--secondary);
     }
 
     .header-flex-item:first-child .sub-header-flex-item:last-child {
-        position: relative;
-        bottom: 10px;
+
     }
 
     #title {
-        color: #ffd5e9;
-        font-family: "Dancing Script", sans-serif;
+        color: var(--primary);
     }
 
     .nav-flex-container {
@@ -571,21 +592,135 @@
     }
 
     .nav-flex-item {
-        color: #ffd5e9;
-        font-size: 20px;
+        color: var(--primary);
+        font-size: 16px;
 
         margin-left: 15px;
     }
 
+    .non-current-link {
+        color: var(--primary);
+    }/* SET BACKGROUND COLOR */
+    body {
+        background-color: whitesmoke; /*var(--background);*/
+    }
+
+    /* SET FONT SIZES */
+    h1 {
+        font-family: Urbanist, sans-serif;
+        font-size: 34px;
+
+        font-weight: 400;
+    }
+
+    h2 {
+        font-family: Overpass, sans-serif;
+        font-size: 20px;
+    }
+
+    h3 {
+        font-family: Overpass, sans-serif;
+        font-size: 14px;
+    }
+
+    h4 {
+        font-family: Overpass, sans-serif;
+        font-size: 12px;
+    }
+
+    h5 {
+        font-family: Overpass, sans-serif;
+        font-size: 10px;
+    }
+
+    /* SET HOVERABLE */
+    .hoverable {
+        transition-duration: 0.3s;
+        transition-property: color, opacity;
+    }
+
+    .hoverable:hover {
+        color: var(--secondary);
+    }
+
+    /* HEADER STYLING */
+    header {
+        background-color: whitesmoke;
+
+        padding: 25px 50px;
+    }
+
+    .header-flex-container {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .header-flex-item:nth-child(1) {
+        order: 1;
+    }
+
+    .header-flex-item:nth-child(2) {
+        order: 3;
+    }
+
+    .header-flex-item:nth-child(3) {
+        order: 2;
+        width: 0;
+        height: 0;
+        visibility: collapse;
+    }
+
+    .sub-header-flex-container {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-start;
+    }
+
+    .sub-header-flex-item {
+        color: var(--primary);
+    }
+
+    .sub-header-flex-item b {
+        color: var(--secondary);
+    }
+
+    .header-flex-item:first-child .sub-header-flex-item:last-child {
+
+    }
+
+    #title {
+        color: var(--primary);
+    }
+
+    .nav-flex-container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: right;
+        align-items: flex-start;
+    }
+
+    .nav-flex-item {
+        color: var(--primary);
+        font-size: 16px;
+
+        margin-left: 15px;
+    }
+
+    .non-current-link {
+        color: var(--primary);
+    }
+
     /* BODY STYLING */
     .body-flex-container {
-        color: rgba(0, 0, 0, 0.7);
+        color: whitesmoke;
 
         display: flex;
         flex-flow: column nowrap;
         align-items: center;
 
-        padding: 50px;
+        padding: 0 50px 25px;
     }
 
     .body-flex-item {
@@ -601,7 +736,9 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        row-gap: 5px;
+
+        padding: 20px;
+        background-color: var(--primary);
     }
 
     .sub-body-flex-item {
@@ -609,7 +746,6 @@
     }
 
     #film-title {
-        color: rgba(16, 20, 141, 0.57);
     }
 
     #film-role-and-release {
@@ -638,6 +774,9 @@
     .media-container {
         margin-top: 30px;
         margin-bottom: 30px;
+
+        background-color: whitesmoke;
+        padding: 5px;
     }
 
     #film-festivals {
@@ -672,13 +811,13 @@
         flex: unset;
 
         margin-top: 30px;
+        margin-bottom: 15px;
     }
 
     #film-screener-request a h4 {
-        color: rgba(16, 20, 141, 0.57);
+        color: var(--primary);
 
         background-color: whitesmoke;
-        border: 2px solid rgba(16, 20, 141, 0.57);
         border-radius: 6px;
 
         padding: 10px;
@@ -689,8 +828,9 @@
     }
 
     #film-screener-request a h4:hover {
-        background-color: rgba(16, 20, 141, 0.57);
         color: whitesmoke;
+
+        background-color: var(--secondary);
 
         padding: 10px;
 
@@ -706,38 +846,40 @@
 @media screen and (min-width: 801px) {
     /* SET BACKGROUND COLOR */
     body {
-        background-color: var(--background);
+        background-color: whitesmoke; /*var(--background);*/
     }
 
     /* SET FONT SIZES */
     h1 {
-        font-family: sans-serif;
+        font-family: Urbanist, sans-serif;
         font-size: 34px;
+
+        font-weight: 400;
     }
 
     h2 {
         font-family: Overpass, sans-serif;
-        font-size: 24px;
+        font-size: 20px;
     }
 
     h3 {
         font-family: Overpass, sans-serif;
-        font-size: 16px;
+        font-size: 14px;
     }
 
     h4 {
         font-family: Overpass, sans-serif;
-        font-size: 13px;
+        font-size: 12px;
     }
 
     h5 {
         font-family: Overpass, sans-serif;
-        font-size: 12px;
+        font-size: 10px;
     }
 
     /* SET HOVERABLE */
     .hoverable {
-        transition-duration: 0.4s;
+        transition-duration: 0.3s;
         transition-property: padding-right, opacity, color;
     }
 
@@ -747,11 +889,11 @@
 
     /* HEADER STYLING */
     header {
-        background-color: var(--primary);
+        background-color: whitesmoke; /*var(--primary);*/
 
         position: fixed;
-        width: 300px;
-        padding-left: 25px;
+        width: 285px;
+        padding-left: 50px;
         padding-right: 50px;
         min-height: 320px;
         height: 100%;
@@ -774,7 +916,7 @@
     }
 
     .sub-header-flex-item {
-        color: var(--neutral);
+        color: var(--primary);
         text-align: right;
     }
 
@@ -783,8 +925,7 @@
     }
 
     #title {
-        font-family: "Montserrat", sans-serif;
-        color: var(--neutral);
+        color: var(--primary);
     }
 
     .nav-flex-container {
@@ -803,8 +944,8 @@
         padding-bottom: 5px;
     }
 
-    .nav-flex-item > a {
-        color: var(--neutral);
+    .non-current-link {
+        color: var(--primary);
 
         padding-right: 8px;
         border-right-style: solid;
@@ -812,7 +953,7 @@
         border-color: var(--secondary);
     }
 
-    .nav-flex-item > a:hover {
+    .nav-flex-item a:hover {
         padding-right: 4px;
         border-style: unset;
     }
@@ -827,17 +968,17 @@
     }
 
     .sub-header-flex-container:last-child > .sub-header-flex-item > a {
-        color: var(--neutral);
+        color: var(--primary);
     }
 
     /* BODY STYLING */
     .body-flex-container {
-        color: var(--primary);
+        color: whitesmoke;
 
         display: flex;
         flex-flow: row nowrap;
 
-        padding: 50px 50px;
+        padding: 25px 25px 25px 50px;
     }
 
     .body-flex-item {
@@ -845,8 +986,8 @@
     }
 
     .body-flex-item:first-child {
-        min-width: 300px;
-        width: 300px;
+        min-width: 235px;
+        width: 235px;
     }
 
     /* SECTION STYLING */
@@ -854,7 +995,9 @@
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        row-gap: 5px;
+
+        padding: 20px;
+        background-color: var(--primary);
     }
 
     .sub-body-flex-item {
@@ -890,6 +1033,9 @@
     .media-container {
         margin-top: 30px;
         margin-bottom: 30px;
+
+        background-color: whitesmoke;
+        padding: 5px;
     }
 
     .laurels-container {
@@ -962,13 +1108,13 @@
         flex: unset;
 
         margin-top: 30px;
+        margin-bottom: 15px;
     }
 
     #film-screener-request a h4 {
-        color: var(--neutral);
+        color: var(--primary);
 
-        background-color: var(--primary);
-        border: 0 solid var(--primary);
+        background-color: whitesmoke;
         border-radius: 6px;
 
         padding: 10px;
@@ -979,7 +1125,7 @@
     }
 
     #film-screener-request a h4:hover {
-        color: var(--neutral);
+        color: whitesmoke;
 
         background-color: var(--secondary);
 
