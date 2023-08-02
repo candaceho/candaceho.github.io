@@ -101,6 +101,16 @@ a {
     src: url("/assets/fonts/Overpass/Overpass-VariableFont_wght.ttf");
 }
 
+@font-face {
+    font-family: "Comfortaa";
+    src: url("/assets/fonts/Comfortaa/Comfortaa-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: "Urbanist";
+    src: url("/assets/fonts/Urbanist/Urbanist-VariableFont_wght.ttf");
+}
+
 /*
  *
  * COLORS
@@ -132,4 +142,5 @@ a {
     --secondary: #BD1E51;
     --accent: rgb(255, 69, 69);
     --neutral: #F9D1D7;
+    --background: #e8cece;
 }

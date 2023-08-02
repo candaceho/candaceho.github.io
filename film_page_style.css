@@ -706,13 +706,13 @@
 @media screen and (min-width: 801px) {
     /* SET BACKGROUND COLOR */
     body {
-        background-color: whitesmoke;
+        background-color: var(--background);
     }
 
     /* SET FONT SIZES */
     h1 {
         font-family: sans-serif;
-        font-size: 48px;
+        font-size: 34px;
     }
 
     h2 {
@@ -742,12 +742,12 @@
     }
 
     .hoverable:hover {
-        color: rgba(16, 20, 141, 0.57);
+        color: var(--secondary);
     }
 
     /* HEADER STYLING */
     header {
-        background-color: var(--lilac);
+        background-color: var(--primary);
 
         position: fixed;
         width: 300px;
@@ -774,16 +774,17 @@
     }
 
     .sub-header-flex-item {
-        color: var(--champagne);
+        color: var(--neutral);
         text-align: right;
     }
 
-    #title {
-        font-family: "Dancing Script", sans-serif;
-        color: rgba(16, 20, 141, 0.57);
+    .sub-header-flex-item b {
+        color: var(--secondary);
+    }
 
-        position: relative;
-        top: 5px;
+    #title {
+        font-family: "Montserrat", sans-serif;
+        color: var(--neutral);
     }
 
     .nav-flex-container {
@@ -803,12 +804,12 @@
     }
 
     .nav-flex-item > a {
-        color: var(--champagne);
+        color: var(--neutral);
 
         padding-right: 8px;
         border-right-style: solid;
         border-right-width: 3px;
-        border-color: rgba(16, 20, 141, 0.57);
+        border-color: var(--secondary);
     }
 
     .nav-flex-item > a:hover {
@@ -822,16 +823,16 @@
 
     .sub-header-flex-container:last-child > .sub-header-flex-item {
         text-align: left;
-        color: rgba(16, 20, 141, 0.57);
+        color: var(--secondary);
     }
 
     .sub-header-flex-container:last-child > .sub-header-flex-item > a {
-        color: var(--champagne);
+        color: var(--neutral);
     }
 
     /* BODY STYLING */
     .body-flex-container {
-        color: rgba(0, 0, 0, 0.7);
+        color: var(--primary);
 
         display: flex;
         flex-flow: row nowrap;
@@ -861,7 +862,6 @@
     }
 
     #film-title {
-        color: rgba(16, 20, 141, 0.57);
     }
 
     #film-role-and-release {
@@ -965,10 +965,10 @@
     }
 
     #film-screener-request a h4 {
-        color: rgba(16, 20, 141, 0.57);;
+        color: var(--neutral);
 
-        background-color: whitesmoke;
-        border: 2px solid rgba(16, 20, 141, 0.57);
+        background-color: var(--primary);
+        border: 0 solid var(--primary);
         border-radius: 6px;
 
         padding: 10px;
@@ -979,8 +979,9 @@
     }
 
     #film-screener-request a h4:hover {
-        background-color: rgba(16, 20, 141, 0.57);
-        color: whitesmoke;
+        color: var(--neutral);
+
+        background-color: var(--secondary);
 
         padding: 10px;
 
