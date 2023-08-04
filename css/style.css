@@ -84,12 +84,12 @@ a {
 
 @font-face {
     font-family: "Overpass";
-    src: url("../assets/fonts/Overpass/Overpass-VariableFont_wght.ttf");
+    src: url("../assets/fonts/Overpass/Overpass-VariableFont_wght.ttf") format('truetype');
 }
 
 @font-face {
     font-family: "Urbanist";
-    src: url("../assets/fonts/Urbanist/Urbanist-VariableFont_wght.ttf");
+    src: url("../assets/fonts/Urbanist/Urbanist-VariableFont_wght.ttf") format('truetype');
 }
 
 /*
