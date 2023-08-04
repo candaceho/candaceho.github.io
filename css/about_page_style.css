@@ -147,7 +147,8 @@ html, body {
     }
 
     .bio p {
-        line-height: 2;
+        font-size: 15px;
+        font-weight: 500;
     }
 
     .socials-flex-container {
@@ -305,7 +306,8 @@ html, body {
     }
 
     .bio p {
-        line-height: 2;
+        font-size: 15px;
+        font-weight: 500;
     }
 
     .socials-flex-container {
@@ -488,7 +490,8 @@ html, body {
     }
 
     .bio p {
-        line-height: 2;
+        font-size: 15px;
+        font-weight: 500;
     }
 
     .socials-flex-container {
