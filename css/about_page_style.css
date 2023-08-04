@@ -648,7 +648,7 @@ html, body {
     }
 
     .sub-body-flex-item:first-child {
-        flex: 0 1 360px;
+        flex: 0 1 450px;
     }
 
     .sub-body-flex-item:last-child {
