@@ -96,7 +96,6 @@ html, body {
 
     .current-link {
         color: var(--secondary);
-        padding-right: 4px;
         border-style: unset;
     }
 

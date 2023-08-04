@@ -15,22 +15,29 @@
 }
 
 /*
+.sgh-img {
+    background-image: url("/assets/sgh/stills/sgh_stills_placeholder_opt.webp");
+}
+
+.w\(ho\)-img {
+    background-image: url("/assets/w(ho)/stills/w(ho)_stills_placeholder_opt.webp");
+}
+
+.crosswinds-img {
+    background-image: url("/assets/crosswinds/stills/crosswinds_stills_placeholder_opt.webp");
+}
+
+.chasing-clouds-img {
+    background-image: url("/assets/chasing_clouds/stills/chasing_clouds_stills_placeholder_opt.webp");
+}*/
+
+/*
  *
  * EXTRA SMALL SCREENS
  *
  */
 
 @media screen and (max-width: 500px) {
-    /* SET HOVERABLE */
-    .hoverable {
-        transition-duration: 0.3s;
-        transition-property: color, opacity;
-    }
-
-    .hoverable:hover {
-        color: var(--secondary);
-    }
-
     /* HEADER STYLING */
     header {
         background-color: whitesmoke;
@@ -145,7 +152,6 @@
     }
 
     .section-image img {
-        transition-duration: 0.3s;
     }
 
     .section-image img:hover {
@@ -315,7 +321,6 @@
     }
 
     .section-image img {
-        transition-duration: 0.3s;
     }
 
     .section-image img:hover {
@@ -512,7 +517,6 @@
     }
 
     .section-image img {
-        transition-duration: 0.3s;
     }
 
     .section-image img:hover {
@@ -790,7 +794,6 @@
 
     .section-image img {
         object-fit: contain;
-        transition-duration: 0.3s;
 
         background-color: whitesmoke;
     }
