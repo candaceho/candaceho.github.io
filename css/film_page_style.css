@@ -303,7 +303,7 @@
 
     /* BODY STYLING */
     .body-flex-container {
-        color: whitesmoke;
+        color: var(--primary);
 
         display: flex;
         flex-flow: column nowrap;
@@ -699,9 +699,16 @@
 
     }
 
-    .body-flex-item:first-child {
-        min-width: 235px;
-        width: 235px;
+    .body-flex-item:nth-child(1) {
+        flex: 1 0 235px;
+    }
+
+    .body-flex-item:nth-child(2) {
+        flex: 0 1 1130px;
+    }
+
+    .body-flex-item:nth-child(3) {
+        flex: 1 1;
     }
 
     /* SECTION STYLING */
