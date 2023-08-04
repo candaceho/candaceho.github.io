@@ -344,7 +344,7 @@ html, body {
  * MEDIUM SCREENS
  *
  */
-@media screen and (min-width: 801px) and (max-width: 1104px) {
+@media screen and (min-width: 801px) and (max-width: 1106px) {
     /* HEADER STYLING */
     header {
         background-color: whitesmoke;
@@ -516,7 +516,7 @@ html, body {
  * LARGE SCREENS
  *
  */
-@media screen and (min-width: 1105px) {
+@media screen and (min-width: 1107px) {
     /* HEADER STYLING */
     header {
         background-color: whitesmoke;

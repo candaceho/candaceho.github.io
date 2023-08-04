@@ -178,7 +178,6 @@
 
     .media-container {
         margin-top: 30px;
-        margin-bottom: 30px;
 
         background-color: whitesmoke;
         padding: 5px;
@@ -186,6 +185,7 @@
 
     #film-screener-request {
         flex: unset;
+        margin-top: 30px;
         margin-bottom: 15px;
     }
 
@@ -379,13 +379,47 @@
 
     .media-container {
         margin-top: 30px;
-        margin-bottom: 30px;
 
         background-color: whitesmoke;
         padding: 5px;
     }
 
+    #film-screener-request {
+        flex: unset;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
 
+    #film-screener-request a h4 {
+        color: var(--primary);
+
+        background-color: whitesmoke;
+        border-radius: 6px;
+        border: 2px solid var(--primary);
+
+        padding: 10px;
+
+        text-align: center;
+
+        transition-duration: 0.4s;
+    }
+
+    #film-screener-request a h4:hover {
+        color: whitesmoke;
+
+        background-color: var(--primary);
+
+        padding: 10px;
+
+        text-align: center;
+    }
+
+    .flickity-button {
+        color: var(--primary);
+
+        transition-duration: 0.3s;
+        transition-property: background-color;
+    }
 }
 
 /*
@@ -544,7 +578,6 @@
 
     .media-container {
         margin-top: 30px;
-        margin-bottom: 30px;
 
         background-color: whitesmoke;
         padding: 5px;
@@ -552,11 +585,7 @@
 
     #film-screener-request {
         flex: unset;
-        margin-bottom: 15px;
-    }
-
-    #film-screener-request {
-        flex: unset;
+        margin-top: 30px;
         margin-bottom: 15px;
     }
 
@@ -783,14 +812,13 @@
 
     .media-container {
         margin-top: 30px;
-        margin-bottom: 30px;
 
         background-color: whitesmoke;
-        border: 5px solid whitesmoke;
     }
 
     #film-screener-request {
         flex: unset;
+        margin-top: 30px;
         margin-bottom: 15px;
     }
 
