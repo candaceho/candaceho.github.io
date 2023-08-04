@@ -699,6 +699,9 @@
     .section-flex-item {
     }
 
+    .section-flex-item:first-child .section-image {
+    }
+
     .section-flex-item:nth-child(even) {
         justify-content: flex-end;
     }
@@ -782,7 +785,6 @@
 
     .section-image {
         flex: 0 1 600px;
-
         padding: 20px;
     }
 
