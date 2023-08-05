@@ -647,11 +647,11 @@ html, body {
     }
 
     .sub-body-flex-item:first-child {
-        flex: 0 1 450px;
+        flex: 0 1 375px;
     }
 
     .sub-body-flex-item:last-child {
-        flex: 0 1 380px;
+        flex: 0 1 375px;
     }
 
     .bio {
