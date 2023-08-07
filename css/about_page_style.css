@@ -49,9 +49,8 @@ html, body {
 
     .header-flex-item:nth-child(3) {
         order: 2;
-        width: 0;
-        height: 0;
-        visibility: collapse;
+
+        display: none;
     }
 
     .sub-header-flex-container {
@@ -209,9 +208,8 @@ html, body {
 
     .header-flex-item:nth-child(3) {
         order: 2;
-        width: 0;
-        height: 0;
-        visibility: collapse;
+
+        display: none;
     }
 
     .sub-header-flex-container {

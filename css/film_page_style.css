@@ -45,9 +45,8 @@
 
     .header-flex-item:nth-child(3) {
         order: 2;
-        width: 0;
-        height: 0;
-        visibility: collapse;
+
+        display: none;
     }
 
     .sub-header-flex-container {
@@ -127,10 +126,12 @@
 
     #film-role-and-release {
         order: 3;
+        margin-top: 5px;
     }
 
     #film-description {
         order: 2;
+        margin-top: 5px;
     }
 
     #film-cast {
@@ -250,9 +251,8 @@
 
     .header-flex-item:nth-child(3) {
         order: 2;
-        width: 0;
-        height: 0;
-        visibility: collapse;
+
+        display: none;
     }
 
     .sub-header-flex-container {
@@ -331,11 +331,13 @@
         flex: 1 1;
 
         margin-right: 20px;
+        margin-top: 5px;
     }
 
     #film-description {
         flex: 1 1;
         text-align: right;
+        margin-top: 5px;
     }
 
     #film-cast {
@@ -561,11 +563,13 @@
         flex: 1 1;
 
         margin-right: 20px;
+        margin-top: 5px;
     }
 
     #film-description {
         flex: 1 1;
         text-align: right;
+        margin-top: 5px;
     }
 
     #film-cast {
