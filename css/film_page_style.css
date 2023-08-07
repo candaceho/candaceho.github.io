@@ -124,33 +124,57 @@
         order: 1;
     }
 
-    #film-role-and-release {
-        order: 3;
+    #film-role{
+        order: 2;
+        flex: 1 1 auto;
+
+        margin-right: 20px;
         margin-top: 5px;
+
+        font-family: Overpass, sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    #film-release {
+        order: 3;
+        flex: 0 1 auto;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-family: Overpass, sans-serif;
+        font-weight: 600;
+        font-size: 16px;
     }
 
     #film-description {
-        order: 2;
-        margin-top: 5px;
+        order: 4;
+        flex: 1 1 100%;
+
+        font-family: Overpass, sans-serif;
+        font-weight: 600;
+        font-size: 16px;
     }
 
     #film-cast {
-        order: 4;
-        margin-top: 20px;
-    }
-
-    #film-logline {
         order: 5;
         margin-top: 20px;
     }
 
-    .extra-content {
+    #film-logline {
         order: 6;
         margin-top: 20px;
     }
 
-    #film-festivals {
+    .extra-content {
         order: 7;
+        margin-top: 20px;
+    }
+
+    #film-festivals {
+        order: 8;
         margin-top: 20px;
         text-align: left;
     }
@@ -174,7 +198,7 @@
     }
 
     .media-container {
-        order: 8;
+        order: 9;
         margin-top: 30px;
 
         background-color: whitesmoke;
@@ -182,7 +206,7 @@
     }
 
     #film-screener-request {
-        order: 9;
+        order: 10;
         flex: unset;
         margin-top: 30px;
         margin-bottom: 15px;
@@ -327,17 +351,37 @@
     #film-title {
     }
 
-    #film-role-and-release {
-        flex: 1 1;
+    #film-role{
+        flex: 1 1 auto;
 
         margin-right: 20px;
         margin-top: 5px;
+
+        font-family: Overpass, sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    #film-release {
+        flex: 0 1 auto;
+
+        margin-top: 5px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-family: Overpass, sans-serif;
+        font-weight: 600;
+        font-size: 16px;
     }
 
     #film-description {
-        flex: 1 1;
-        text-align: right;
-        margin-top: 5px;
+        flex: 1 1 100%;
+
+        font-family: Overpass, sans-serif;
+        font-weight: 600;
+        font-size: 16px;
     }
 
     #film-cast {
@@ -559,17 +603,37 @@
     #film-title {
     }
 
-    #film-role-and-release {
-        flex: 1 1;
+    #film-role{
+        flex: 1 1 auto;
 
         margin-right: 20px;
         margin-top: 5px;
+
+        font-family: Overpass, sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+    }
+
+    #film-release {
+        flex: 0 1 auto;
+
+        margin-top: 5px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        font-family: Overpass, sans-serif;
+        font-weight: 700;
+        font-size: 16px;
     }
 
     #film-description {
-        flex: 1 1;
-        text-align: right;
-        margin-top: 5px;
+        flex: 1 1 100%;
+
+        font-family: Overpass, sans-serif;
+        font-weight: 700;
+        font-size: 16px;
     }
 
     #film-cast {
