@@ -171,6 +171,7 @@
         height: 100%;
         width: 100%;
 
+        object-fit: contain;
         background-color: var(--primary);
     }
 
@@ -195,29 +196,28 @@
 
     .film-title {
         order: 1;
-        flex: 2 0 100%;
+        flex: 1 1 100%;
     }
 
     .film-description {
         order: 2;
-        flex: 1 1 40%;
+        flex: 1 1 100%;
     }
 
     .film-role {
-        order: 4;
+        order: 3;
         flex: 1 1 100%;
     }
 
     .film-release-year {
-        order: 3;
-        flex: 1 1 40%;
+        order: 4;
+        flex: 1 1 100%;
 
         font-style: italic;
-        text-align: right;
     }
 
     .extra-content {
-        order: 6;
+        order: 5;
         flex: 1 1 100%;
 
         margin-top: 25px;
@@ -353,7 +353,8 @@
         height: 100%;
         width: 100%;
 
-        background-color: var(--primary);
+        object-fit: contain;
+        /*background-color: var(--primary);*/
     }
 
     .section-image img:hover {
@@ -563,7 +564,8 @@
         height: 100%;
         width: 100%;
 
-        background-color: var(--primary);
+        object-fit: contain;
+        /*background-color: var(--primary);*/
     }
 
     .section-image img:hover {
@@ -852,7 +854,7 @@
         width: 100%;
 
         object-fit: contain;
-        background-color: var(--primary);
+        /*background-color: var(--primary);*/
     }
 
     .section-image img:hover {
