@@ -14,21 +14,29 @@
     color: var(--secondary);
 }
 
+.sgh-ratio {
+    aspect-ratio: 692 / 377;
+}
+
+.standard-ratio {
+    aspect-ratio: 692 / 433;
+}
+
 /*
 .sgh-img {
-    background-image: url("/assets/sgh/stills/sgh_stills_placeholder_opt.webp");
+    background-color: black;
 }
 
 .w\(ho\)-img {
-    background-image: url("/assets/w(ho)/stills/w(ho)_stills_placeholder_opt.webp");
+    background-color: black;
 }
 
 .crosswinds-img {
-    background-image: url("/assets/crosswinds/stills/crosswinds_stills_placeholder_opt.webp");
+    background-color: black;
 }
 
 .chasing-clouds-img {
-    background-image: url("/assets/chasing_clouds/stills/chasing_clouds_stills_placeholder_opt.webp");
+    background-color: black;
 }*/
 
 /*
@@ -64,7 +72,8 @@
         order: 2;
         width: 0;
         height: 0;
-        visibility: collapse;
+        /*visibility: collapse;*/
+        display: none;
     }
 
     .sub-header-flex-container {
@@ -151,7 +160,18 @@
         margin-bottom: 10px;
     }
 
+    .section-image a {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+    }
+
     .section-image img {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+
+        background-color: var(--primary);
     }
 
     .section-image img:hover {
@@ -169,7 +189,8 @@
     }
 
     .section-content-buffer {
-        visibility: collapse;
+        /*visibility: collapse;*/
+        display: none;
     }
 
     .film-title {
@@ -236,7 +257,8 @@
         order: 2;
         width: 0;
         height: 0;
-        visibility: collapse;
+        /*visibility: collapse;*/
+        display: none;
     }
 
     .sub-header-flex-container {
@@ -320,7 +342,18 @@
         margin-bottom: 10px;
     }
 
+    .section-image a {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+    }
+
     .section-image img {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+
+        background-color: var(--primary);
     }
 
     .section-image img:hover {
@@ -338,7 +371,8 @@
     }
 
     .section-content-buffer {
-        visibility: collapse;
+        /*visibility: collapse;*/
+        display: none;
     }
 
     .film-title {
@@ -516,7 +550,19 @@
         padding-bottom: 10px;
     }
 
+    .section-image a {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+    }
+
+
     .section-image img {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+
+        background-color: var(--primary);
     }
 
     .section-image img:hover {
@@ -534,7 +580,8 @@
     }
 
     .section-content-buffer {
-        visibility: collapse;
+        /*visibility: collapse;*/
+        display: none;
     }
 
     .film-title {
@@ -792,10 +839,19 @@
         padding: 20px;
     }
 
-    .section-image img {
-        object-fit: contain;
+    .section-image a {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+    }
 
-        background-color: whitesmoke;
+    .section-image img {
+        display: inline-block;
+        height: 100%;
+        width: 100%;
+
+        object-fit: contain;
+        background-color: var(--primary);
     }
 
     .section-image img:hover {
