@@ -639,6 +639,7 @@ html, body {
     .sub-body-flex-container {
         display: flex;
         flex-flow: row nowrap;
+        align-items: center;
         justify-content: center;
         column-gap: 20px;
 
