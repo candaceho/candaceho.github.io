@@ -636,7 +636,6 @@ html, body {
     .sub-body-flex-container {
         display: flex;
         flex-flow: row nowrap;
-        align-items: center;
         justify-content: center;
         column-gap: 20px;
 
@@ -645,11 +644,11 @@ html, body {
     }
 
     .sub-body-flex-item:first-child {
-        flex: 0 1 375px;
+        flex: 0 1 66%;
     }
 
     .sub-body-flex-item:last-child {
-        flex: 0 1 375px;
+        flex: 0 0 33%;
     }
 
     .bio {
@@ -658,7 +657,6 @@ html, body {
 
         display: flex;
         flex-flow: column nowrap;
-        justify-content: center;
 
         row-gap: 20px;
 
@@ -669,6 +667,7 @@ html, body {
     .bio p {
         font-size: 15px;
         font-weight: 500;
+        font-stretch: 100%;
     }
 
     .socials-flex-container {
