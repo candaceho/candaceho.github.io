@@ -155,7 +155,9 @@
 
         font-family: Overpass, sans-serif;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 14px;
+
+        margin-top: 4px;
     }
 
     #film-cast {
@@ -381,7 +383,9 @@
 
         font-family: Overpass, sans-serif;
         font-weight: 600;
-        font-size: 16px;
+        font-size: 14px;
+
+        margin-top: 4px;
     }
 
     #film-cast {
@@ -624,7 +628,7 @@
         justify-content: center;
 
         font-family: Overpass, sans-serif;
-        font-weight: 700;
+        font-weight: 600;
         font-size: 16px;
     }
 
@@ -632,8 +636,10 @@
         flex: 1 1 100%;
 
         font-family: Overpass, sans-serif;
-        font-weight: 700;
-        font-size: 16px;
+        font-weight: 600;
+        font-size: 14px;
+
+        margin-top: 4px;
     }
 
     #film-cast {
