@@ -5,12 +5,12 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>CANDACE HO | FILMS</title>
     <meta name="description" content="Candace Ho is a Taiwanese-American narrative filmmaker based in Los Angeles.">
-    <link href="/assets/icons/favicon.png" rel="icon" type="image/x-icon">
-    <link href="/css/style.css" rel="stylesheet">
-    <link href="/css/index_style.css" rel="stylesheet">
-    <link rel="preload" href="/assets/sgh/stills/sgh_stills_opt_small.webp" as="image">
-    <link rel="preload" href="/assets/w(ho)/stills/w(ho)_stills_opt_small.webp" as="image">
-    <link rel="preload" href="/assets/crosswinds/stills/crosswinds_stills_opt_small.webp" as="image">
+    <link rel="icon" href="/assets/icons/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/index_style.css">
+    <link rel="stylesheet" href="/css/flickity.min.css" media="screen">
+    <link rel="preload" href="/assets/crosswinds/stills/crosswinds_still_1_opt.webp" as="image">
+    <link rel="preload" href="/assets/chasing_clouds/stills/chasing_clouds_still_1_opt.webp" as="image">
 </head>
 
 <!-- Google tag (gtag.js) -->
@@ -23,6 +23,9 @@
     gtag('config', 'G-DZ81X3EHLP');
 </script>
 
+<!-- Flickity script -->
+<script src="/js/flickity.pkgd.min.js"></script>
+
 <body>
 <!-- HEADER/SIDEBAR -->
 <header class="header-flex-container">
@@ -31,9 +34,9 @@
         <h1 class="sub-header-flex-item" id="title">
             <a href=".">candace ho</a>
         </h1>
-        <h3 class="sub-header-flex-item">
-            writer <b>|</b> director
-        </h3>
+        <h4 class="sub-header-flex-item">
+            writer <b>/</b> director
+        </h4>
     </div>
 
     <div class="sub-header-flex-container header-flex-item">
@@ -41,18 +44,6 @@
             <h3 class="nav-flex-item"><a class="hoverable current-link" href=".">work</a></h3>
             <h3 class="nav-flex-item"><a class="hoverable non-current-link" href="about">about</a></h3>
         </nav>
-    </div>
-
-    <!-- CONTACT/SOCIALS -->
-    <div class="sub-header-flex-container header-flex-item">
-        <h4 class="sub-header-flex-item" id="email">
-            email:<br>
-            <a href="mailto:candace.ho97@gmail.com" target="_blank">candace.ho97@gmail.com</a>
-        </h4>
-        <h4 class="sub-header-flex-item" id="instagram">
-            ig:<br>
-            <a href="https://www.instagram.com/_candaceho/" target="_blank">@_candaceho</a>
-        </h4>
     </div>
 </header>
 
@@ -62,77 +53,222 @@
     <div class="body-flex-item"></div>
 
     <!-- CONTENT -->
-    <section class="section-flex-container body-flex-item">
+    <section class="card-flex-container body-flex-item">
         <!-- SGH -->
-        <section class="section-flex-item">
+        <section class="card-flex-item">
             <!-- STILL/POSTER -->
-            <div class="section-image"> <!--style="aspect-ratio: 692 / 377;">-->
-                <a href="sgh">
-                    <img width="652" height="337" alt="sorry grandpa hsaio still" class="hoverable sgh-img" src="/assets/sgh/stills/sgh_stills_opt_small.webp">
-                </a>
+            <div class="card-media">
+                <iframe src="https://player.vimeo.com/video/852534002?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="Sorry Grandpa Hsiao">
+
+                </iframe>
             </div>
             <!-- DESCRIPTION -->
-            <div class="section-content-main">
-                <h2 class="film-title"><a class="hoverable" href="sgh">SORRY GRANDPA HSIAO</a></h2>
-                <h3 class="film-role">writer <b>|</b> director</h3>
-                <h4 class="film-description">12 mins - narrative - live action </h4>
-                <h4 class="film-release-year">premiered at<br>TRIBECA FILM FESTIVAL 2023</h4>
+            <div class="card-content">
+                <div class="film-title">
+                    <h3>SORRY GRANDPA HSIAO</h3>
+                    <h4>writer <b>/</b> director</h4>
+                </div>
+                <div class="film-cast">
+                    <p>Starring <b>Valerie Yu</b> and <b>Mark Daugherty</b>.</p>
+                </div>
+                <div class="film-logline">
+                    <p>
+                        Desperate for a promotion, a Chinese American woman enlists her "perfect" brother to help exploit her grandpa's death anniversary for a workplace AAPI heritage month social takeover.
+                    </p>
+                </div>
+                <div class="film-festivals">
+                    <h3>FILM FESTIVALS</h3>
+                    <div class="festivals-container">
+                        <div class="festival">
+                            <p>
+                                • Tribeca Film Festival (2023)
+                            </p>
+                        </div>
+                        <div class="festival">
+                            <p>
+                                • Austin Film Festival (2023)
+                            </p>
+                        </div>
+                        <div class="festival">
+                            <p>
+                                • DC Shorts Film Festival (2023)
+                            </p>
+                        </div>
+                        <div class="festival">
+                            <p>
+                                • Miami Film Festival (2024)
+                            </p>
+                        </div>
+                        <div class="festival">
+                            <p>
+                                • NewFilmmakers Los Angeles (2024)
+                            </p>
+                        </div>
+                        <div class="festival">
+                            <p>
+                                • Seattle Asian American Film Festival (2024)
+                            </p>
+                        </div>
+                        <div class="festival">
+                            <p>
+                                • DisOrient Asian American Film Festival of Oregon (2024)
+                            </p>
+                        </div>
+                        <div class="festival-break"></div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- W(HO) -->
-        <section class="section-flex-item">
+        <section class="card-flex-item">
             <!-- STILL/POSTER -->
-            <div class="section-image">  <!--style="aspect-ratio:692 / 436;">-->
-                <a href="w(ho)">
-                    <img width="652" height="396" alt="w(ho) still" class="hoverable w(ho)-img" src="/assets/w(ho)/stills/w(ho)_stills_opt_small.webp">
-                </a>
+            <div class="card-media">
+                <iframe src="https://player.vimeo.com/video/690082204?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media" title="w(HO)">
+
+                </iframe>
             </div>
             <!-- DESCRIPTION -->
-            <div class="section-content-main">
-                <h2 class="film-title"><a class="hoverable" href="w(ho)">W(HO)</a></h2>
-                <h3 class="film-role">writer <b>|</b> director <b>|</b> editor</h3>
-                <h4 class="film-description">5 mins - doc - mixed media</h4>
-                <h4 class="film-release-year">premiered at<br>LOS ANGELES ASIAN PACIFIC FILM FESTIVAL 2022</h4>
+            <div class="card-content">
+                <div class="film-title">
+                    <h3>W(HO)</h3>
+                    <h4>writer <b>/</b> director <b>/</b> editor</h4>
+                </div>
+                <div class="film-logline">
+                    <p>
+                        Growing up with the last name Ho, jokes came with the territory. And naturally, shame
+                        and resentment towards the word grew as a kid. w(HO) explores the growing pains of a
+                        young woman through five different eras of varying relationships with the word.
+                    </p>
+                </div>
+                <div class="film-festivals">
+                    <h3>FILM FESTIVALS</h3>
+                    <div class="festivals-container">
+                        <div class="festival">
+                            <p>
+                                • Los Angeles Asian American Pacific Film Festival (2022)
+                            </p>
+                        </div>
+                        <div class="festival">
+                            <p>
+                                • San Diego Asian Film Festival (2022)
+                            </p>
+                        </div>
+                        <div class="festival">
+                            <p>
+                                • Asian American International Film Festival (2022)
+                            </p>
+                        </div>
+                        <div class="festival">
+                            <p>
+                                • Boston Asian American Film Festival (2022)
+                            </p>
+                        </div>
+                        <div class="festival">
+                            <p>
+                                • Disorient Asian American Film Festival of Oregon (2022)
+                            </p>
+                        </div>
+                        <div class="festival-break"></div>
+                    </div>
             </div>
         </section>
         <!-- CROSSWINDS -->
-        <section class="section-flex-item">
+        <section class="card-flex-item">
             <!-- STILL/POSTER -->
-            <div class="section-image"> <!-- style="aspect-ratio:692 / 433;"> -->
-                <a href="crosswinds">
-                    <img width="652" height="393" alt="crosswinds still" class="hoverable crosswinds-img"
-                         src="/assets/crosswinds/stills/crosswinds_stills_opt_small.webp">
-                </a>
+            <div class="card-media">
+                <img alt="crosswinds still" src="/assets/crosswinds/stills/crosswinds_still_1_opt.webp">
             </div>
             <!-- DESCRIPTION -->
-            <div class="section-content-main">
-                <h2 class="film-title"><a class="hoverable" href="crosswinds">CROSSWINDS</a></h2>
-                <h3 class="film-role">writer <b>|</b> director <b>|</b> editor</h3>
-                <h4 class="film-description">6 mins - narrative - live action</h4>
-                <h4 class="film-release-year">premiered at<br>FRIEZE ART FAIR 2022</h4>
+            <div class="card-content">
+                <div class="film-title">
+                    <h3>CROSSWINDS</h3>
+                    <h4>writer <b>/</b> director <b>/</b> editor</h4>
+                </div>
+                <div class="film-cast">
+                    <p>
+                        Starring <b>Grace Shen</b>.
+                    </p>
+                </div>
+                <div class="film-logline">
+                    <p>
+                        On the eve of her move out of LA, a second generation Chinese American woman learns
+                        how to let go.
+                    </p>
+                </div>
+                <div class="film-festivals">
+                    <h3>FILM FESTIVALS</h3>
+                    <div class="festivals-container">
+                        <div class="festival">
+                            <p>
+                                • Los Angeles Asian American Pacific Film Festival (2022)
+                            </p>
+                        </div>
+                        <div class="festival-break"></div>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- CHASING CLOUDS -->
-        <section class="section-flex-item">
+        <section class="card-flex-item">
             <!-- STILL/POSTER -->
-            <div class="section-image"> <!-- style="aspect-ratio:692 / 433;"> -->
-                <a href="chasing_clouds">
-                    <img loading="lazy" width="652" height="393" alt="chasing clouds still" class="hoverable chasing-clouds-img"
-                         src="/assets/chasing_clouds/stills/chasing_clouds_stills_opt_small.webp">
-                </a>
+            <div class="card-media">
+                <img alt="chasing clouds still" src="/assets/chasing_clouds/stills/chasing_clouds_still_1_opt.webp">
             </div>
             <!-- DESCRIPTION -->
-            <div class="section-content-main">
-                <h2 class="film-title"><a class="hoverable" href="chasing_clouds">CHASING CLOUDS</a></h2>
-                <h3 class="film-role">writer <b>|</b> director <b>|</b> editor</h3>
-                <h4 class="film-description">11 mins - narrative - live action</h4>
-                <h4 class="film-release-year">premiered at<br>LOS ANGELES ASIAN PACIFIC FILM FESTIVAL 2021</h4>
+            <div class="card-content">
+                <div class="film-title">
+                    <h3>CHASING CLOUDS</h3>
+                    <h4>writer <b>/</b> director <b>/</b> editor</h4>
+                </div>
+                <div class="film-cast">
+                    <p>
+                        Starring <b>Valerie Yu</b> and <b>Mardy Ma</b> (Chang Can Dunk).
+                    </p>
+                </div>
+                <div class="film-logline">
+                    <p>
+                        A Taiwanese-American girl basks in the nostalgia of her memories of her mother by using this technology
+                        until she is forced to confront the harsh reality of her mother’s dementia and her newfound role as the
+                        "mother" of the house.
+                    </p>
+                </div>
+                <div class="film-festivals">
+                    <h3>FILM FESTIVALS</h3>
+                    <div class="festivals-container">
+                        <div class="festival">
+                            <p>
+                                • Los Angeles Asian American Pacific Film Festival (2021)
+                            </p>
+                        </div>
+                        <div class="festival">
+                            <p>
+                                • Seattle Asian American Film Festival (2021)
+                            </p>
+                        </div>
+                        <div class="festival-break"></div>
+                    </div>
+                </div>
             </div>
         </section>
     </section>
 
-    <!-- BUFFER -->
+    <!-- FOOTER OUTLINE -->
     <div class="body-flex-item"></div>
 </div>
 </body>
+
+<!-- FOOTER -->
+<footer>
+    <!-- CONTACT/SOCIALS -->
+    <div class="footer-flex-container">
+        <p class="footer-flex-item" id="email">
+            <b>email:</b>
+            <a href="mailto:candace.ho97@gmail.com" target="_blank">candace.ho97@gmail.com</a>
+        </p>
+        <p class="footer-flex-item" id="instagram">
+            <b>ig:</b>
+            <a href="https://www.instagram.com/_candaceho/" target="_blank">@_candaceho</a>
+        </p>
+    </div>
+</footer>
 </html>
